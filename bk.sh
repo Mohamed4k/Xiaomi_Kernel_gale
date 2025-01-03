@@ -8,12 +8,12 @@ cd Xiaomi_Kernel_gale
 
 git clone https://gitlab.com/LeCmnGend/clang.git -b clang-18 --depth=1
 
-
 TC_DIR="$(pwd)/clang"
 
 export PATH="$TC_DIR/bin:$PATH"
 
 mkdir -p out
+bash gcc -Wno-unused-but-set-variable
 make CFLAGS="-Wno-unused-but-set-variable"
 make O=out ARCH=arm64 gale_defconfig
 
