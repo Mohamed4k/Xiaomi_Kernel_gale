@@ -1,0 +1,2292 @@
+make[1]: Entering directory '/sec/root/kernel/Xiaomi_Kernel_gale/out'
+  GEN     ./Makefile
+  Using .. as source for kernel
+  CALL    ../scripts/checksyscalls.sh
+  AR      usr/built-in.a
+  AR      kernel/livepatch/built-in.a
+  AR      ipc/built-in.a
+  CC      kernel/printk/printk.o
+  CC      kernel/printk/printk_safe.o
+  CC      kernel/rcu/update.o
+  CC      kernel/rcu/sync.o
+  CC      kernel/rcu/srcutree.o
+  CC      kernel/power/qos.o
+  CC      kernel/rcu/tree.o
+  CC      kernel/power/main.o
+  CC      kernel/rcu/rcu_segcblist.o
+  CC      kernel/power/process.o
+  CC      kernel/power/suspend.o
+  CHK     kernel/kheaders_data.tar.xz
+  CC      kernel/power/wakelock.o
+  CC      security/integrity/iint.o
+  CC      kernel/time/time.o
+  CC      kernel/trace/trace_clock.o
+  CC      fs/configfs/inode.o
+  CC      kernel/sched/extension/eas_plus.o
+  CC      crypto/asymmetric_keys/asymmetric_type.o
+  CC      fs/configfs/file.o
+  AR      certs/built-in.a
+  CC      fs/configfs/dir.o
+  CC      kernel/sched/extension/debug.o
+../kernel/power/qos.c:1004:13: warning: unused function 'pm_qos_irq_release' [-Wunused-function]
+static void pm_qos_irq_release(struct kref *ref)
+            ^
+../kernel/power/qos.c:1022:13: warning: unused function 'pm_qos_irq_notify' [-Wunused-function]
+static void pm_qos_irq_notify(struct irq_affinity_notify *notify,
+            ^
+2 warnings generated.
+In file included from ../kernel/rcu/tree.c:4188:
+../kernel/rcu/tree_exp.h:653:19: warning: variable 'rdp' set but not used [-Wunused-but-set-variable]
+        struct rcu_data *rdp;
+                         ^
+In file included from ../kernel/rcu/tree.c:4189:
+../kernel/rcu/tree_plugin.h:712:22: warning: variable 't' set but not used [-Wunused-but-set-variable]
+        struct task_struct *t;
+                            ^
+  CC      block/partitions/check.o
+2 warnings generated.
+  CC      block/bio.o
+../kernel/sched/extension/eas_plus.c:364:6: warning: variable 'task_prefer' set but not used [-Wunused-but-set-variable]
+        int task_prefer;
+            ^
+  CC      security/integrity/integrity_audit.o
+1 warning generated.
+  AR      arch/arm64/net/built-in.a
+  CC      crypto/asymmetric_keys/restrict.o
+  CC      kernel/trace/ring_buffer.o
+  CC      fs/configfs/symlink.o
+  CC      fs/configfs/mount.o
+  CC      kernel/power/poweroff.o
+  CC      fs/configfs/item.o
+  CC      kernel/time/timer.o
+  CC      crypto/asymmetric_keys/signature.o
+  CC      crypto/api.o
+  CC      block/elevator.o
+  CC      drivers/amba/bus.o
+  AR      sound/arm/built-in.a
+  CC      kernel/power/energy_model.o
+  AR      firmware/built-in.a
+  AR      sound/atmel/built-in.a
+  CC      block/partitions/msdos.o
+  CC      kernel/time/hrtimer.o
+  AR      security/integrity/built-in.a
+  AR      kernel/printk/built-in.a
+  CC      security/commoncap.o
+  CC      security/keys/gc.o
+  CC      sound/core/sound.o
+  AR      kernel/rcu/built-in.a
+  GEN     security/selinux/flask.h security/selinux/av_permissions.h
+  CC      sound/core/seq/seq.o
+  CC      security/selinux/avc.o
+  CC      security/selinux/hooks.o
+  CC      kernel/sched/core.o
+  CC      kernel/fork.o
+  AR      fs/configfs/built-in.a
+  CHK     include/generated/compile.h
+  CC      fs/crypto/crypto.o
+  CC      kernel/sched/extension/tuning.o
+  CC      kernel/exec_domain.o
+  CC      crypto/asymmetric_keys/public_key.o
+  CC      kernel/trace/trace.o
+  CC      security/keys/key.o
+  CC      block/partitions/efi.o
+  CC      sound/core/seq/seq_lock.o
+  AR      drivers/amba/built-in.a
+  CC      drivers/android/binderfs.o
+  CC      security/keys/keyring.o
+  CC      kernel/power/wakeup_reason.o
+  AR      arch/arm64/kernel/probes/built-in.a
+  AR      arch/arm64/crypto/built-in.a
+  CC      kernel/time/timekeeping.o
+  CC      sound/core/seq/seq_clientmgr.o
+  CC      security/min_addr.o
+  CC      block/blk-core.o
+  CC      security/selinux/selinuxfs.o
+  CC      sound/core/init.o
+  OBJCOPY arch/arm64/kernel/vdso/vdso.so
+  AS      arch/arm64/kernel/vdso/vdso.o
+  AR      arch/arm64/kernel/vdso/built-in.a
+  CC      net/802/p8022.o
+  CC      net/8021q/vlan_core.o
+  AR      block/partitions/built-in.a
+  CC      fs/crypto/fname.o
+  CC      net/8021q/vlan.o
+  CC      security/security.o
+  CC      security/lsm_audit.o
+  AR      kernel/events/built-in.a
+  AR      kernel/dma/built-in.a
+  AR      kernel/locking/built-in.a
+  CC      kernel/time/ntp.o
+  CC      block/blk-tag.o
+  CC      block/blk-sysfs.o
+  CC      drivers/android/binder.o
+  ASN.1   crypto/asymmetric_keys/x509.asn1.c
+  ASN.1   crypto/asymmetric_keys/x509_akid.asn1.c
+  CC      crypto/asymmetric_keys/x509_public_key.o
+  ASN.1   crypto/asymmetric_keys/pkcs7.asn1.c
+  CC      security/keys/keyctl.o
+  CC      sound/core/seq/seq_memory.o
+  CC      security/keys/permission.o
+  CC      sound/core/seq/seq_queue.o
+  AR      kernel/power/built-in.a
+  CC      drivers/android/binder_alloc.o
+  CC      kernel/sched/extension/debug_aee.o
+  CC      kernel/panic.o
+  AR      kernel/cgroup/built-in.a
+  CC      security/keys/process_keys.o
+  CC      sound/core/seq/seq_fifo.o
+  CC      kernel/trace/trace_output.o
+  CC      kernel/time/clocksource.o
+  AS      arch/arm64/kernel/entry-fpsimd.o
+  CC      kernel/trace/trace_seq.o
+  CC      security/selinux/netlink.o
+  CC      sound/core/memory.o
+  CC      crypto/asymmetric_keys/pkcs7_trust.o
+  CC      arch/arm64/kernel/process.o
+  CC      kernel/time/jiffies.o
+  CC      fs/crypto/hkdf.o
+  AR      init/built-in.a
+  CC      fs/crypto/hooks.o
+  CC      fs/crypto/keyring.o
+  AR      drivers/auxdisplay/built-in.a
+  CC      sound/core/seq/seq_prioq.o
+  CC      sound/core/control.o
+  CC      kernel/sched/loadavg.o
+  CC      net/802/psnap.o
+  CC      net/8021q/vlan_dev.o
+  CC      arch/arm64/lib/atomic_ll_sc.o
+  CC      drivers/base/firmware_loader/fallback_table.o
+  AR      drivers/android/built-in.a
+  CC      net/8021q/vlan_netlink.o
+  CC      block/blk-flush.o
+  CC      drivers/block/zram/zcomp.o
+  AR      drivers/bus/built-in.a
+  CC      net/802/stp.o
+  CC      crypto/cipher.o
+  AS      arch/arm64/lib/clear_page.o
+  CC      crypto/asymmetric_keys/pkcs7_verify.o
+  CC      drivers/block/brd.o
+  CC      security/selinux/nlmsgtab.o
+  AS      arch/arm64/lib/clear_user.o
+  AR      sound/drivers/mpu401/built-in.a
+  CC      sound/core/seq/seq_timer.o
+  AR      sound/firewire/built-in.a
+  AR      sound/drivers/opl3/built-in.a
+  CC      sound/core/misc.o
+  CC      sound/core/device.o
+  AR      sound/drivers/opl4/built-in.a
+  AR      kernel/sched/extension/built-in.a
+  AR      sound/drivers/pcsp/built-in.a
+  CC      security/selinux/netif.o
+  AR      sound/drivers/vx/built-in.a
+  AS      arch/arm64/lib/copy_from_user.o
+  AR      sound/drivers/built-in.a
+  CC      kernel/time/timer_list.o
+  CC      kernel/time/timeconv.o
+  CC      security/selinux/netnode.o
+  CC      security/keys/request_key.o
+  CC      security/keys/request_key_auth.o
+  AS      arch/arm64/lib/copy_in_user.o
+  CC      drivers/block/zram/zram_drv.o
+  AS      arch/arm64/lib/copy_page.o
+  CC      kernel/trace/trace_stat.o
+  CC      fs/crypto/keysetup.o
+  CC      drivers/block/loop.o
+  AS      arch/arm64/lib/copy_to_user.o
+  CC      kernel/time/timecounter.o
+  CC      kernel/time/alarmtimer.o
+  CC      kernel/bpf/lpm_trie.o
+  CC      arch/arm64/lib/delay.o
+  CC      arch/arm64/kernel/ptrace.o
+  CC      net/8021q/vlanproc.o
+  CC      sound/core/seq/seq_system.o
+  CC      crypto/asymmetric_keys/x509.asn1.o
+  CC      drivers/base/firmware_loader/main.o
+  CC      drivers/base/firmware_loader/fallback.o
+  CC      fs/crypto/keysetup_v1.o
+  CC      crypto/asymmetric_keys/x509_akid.asn1.o
+  CC      kernel/irq/pm.o
+  CC      net/bpf/test_run.o
+  AR      arch/arm64/mm/built-in.a
+  CC      block/blk-settings.o
+  CC      crypto/asymmetric_keys/x509_cert_parser.o
+  CC      block/blk-ioc.o
+  CC      block/blk-map.o
+  CC      mm/vmscan.o
+  AR      net/bridge/netfilter/built-in.a
+  CC      security/selinux/netport.o
+  CC      net/bridge/br.o
+  CC      net/core/sock.o
+  CC      net/bridge/br_device.o
+  CC      net/bridge/br_fdb.o
+  CC      lib/crypto/chacha.o
+  AR      drivers/block/zram/built-in.a
+  CC      net/bridge/br_forward.o
+  CC      lib/fonts/fonts.o
+  AR      net/802/built-in.a
+  CC      kernel/trace/trace_printk.o
+  CC      kernel/trace/trace_sched_switch.o
+  CC      fs/devpts/inode.o
+  CC      security/keys/user_defined.o
+  CC      kernel/sched/clock.o
+  CC      sound/core/seq/seq_ports.o
+  CC      sound/core/seq/seq_info.o
+../mm/vmscan.c:2850:17: warning: variable 'node_lru_pages' set but not used [-Wunused-but-set-variable]
+                unsigned long node_lru_pages = 0;
+                              ^
+../mm/vmscan.c:3459:6: warning: variable 'nid' set but not used [-Wunused-but-set-variable]
+        int nid;
+            ^
+  CC      kernel/time/posix-timers.o
+  CC      lib/crypto/libchacha.o
+  AS      arch/arm64/lib/memchr.o
+  CC      fs/crypto/policy.o
+  CC      crypto/asymmetric_keys/pkcs7.asn1.o
+  AS      arch/arm64/lib/memcmp.o
+2 warnings generated.
+  AR      net/8021q/built-in.a
+  CC      arch/arm64/kernel/setup.o
+  AS      arch/arm64/lib/memcpy.o
+  CC      kernel/bpf/local_storage.o
+  CC      crypto/asymmetric_keys/pkcs7_parser.o
+  CC      fs/crypto/bio.o
+  AS      arch/arm64/lib/memmove.o
+  AR      net/bpf/built-in.a
+  CC      lib/crypto/poly1305-donna64.o
+  AR      drivers/block/built-in.a
+  CC      lib/crypto/poly1305.o
+  AS      arch/arm64/lib/memset.o
+  CC      kernel/sched/cputime.o
+  AR      drivers/base/firmware_loader/built-in.a
+  CC      drivers/base/power/sysfs.o
+  AS      arch/arm64/lib/strchr.o
+  CC      fs/exfat/exfat_core.o
+  CC      security/selinux/ibpkey.o
+  AR      fs/devpts/built-in.a
+  CC      lib/fonts/font_8x16.o
+  CC      drivers/base/power/generic_ops.o
+  CC      drivers/base/power/common.o
+  CC      fs/exfat/exfat_super.o
+  CC      block/blk-exec.o
+  CC      fs/exfat/exfat_api.o
+  CC      arch/arm64/kernel/signal.o
+  AS      arch/arm64/lib/strcmp.o
+  AR      kernel/irq/built-in.a
+  AS      arch/arm64/lib/strlen.o
+  CC      sound/core/seq/seq_dummy.o
+  CC      kernel/time/posix-cpu-timers.o
+  CC      security/keys/compat.o
+  AS      arch/arm64/lib/strncmp.o
+  CC      sound/core/seq/seq_midi.o
+  AS      arch/arm64/lib/strnlen.o
+  AR      crypto/asymmetric_keys/built-in.a
+  CC      fs/crypto/inline_crypt.o
+  CC      mm/shmem.o
+  CC      crypto/compress.o
+  CC      kernel/trace/trace_nop.o
+  CC      mm/util.o
+  CC      kernel/bpf/btf.o
+../arch/arm64/kernel/signal.c:752:14: error: use of undeclared identifier 'vdso_offset_sigtramp'
+                sigtramp = VDSO_SYMBOL(current->mm->context.vdso, sigtramp);
+                           ^
+../arch/arm64/include/asm/vdso.h:37:12: note: expanded from macro 'VDSO_SYMBOL'
+        (void *)((vdso_offset_##name & ~1UL) - VDSO_LBASE + \
+                  ^
+<scratch space>:70:1: note: expanded from here
+vdso_offset_sigtramp
+^
+../arch/arm64/kernel/signal.c:752:12: error: assigning to '__sigrestore_t' (aka 'void (*)(void)') from incompatible type 'void'
+                sigtramp = VDSO_SYMBOL(current->mm->context.vdso, sigtramp);
+                         ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.
+make[2]: *** [../scripts/Makefile.build:333: arch/arm64/kernel/signal.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+  CC      net/ethernet/eth.o
+  CC      fs/exfat/exfat_blkdev.o
+  AS      arch/arm64/lib/strrchr.o
+  CC      sound/core/seq/seq_midi_event.o
+  CC      net/core/request_sock.o
+  AR      lib/crypto/built-in.a
+  CC      net/core/skbuff.o
+  AS      arch/arm64/lib/tishift.o
+  CC      net/bridge/br_if.o
+  AR      lib/fonts/built-in.a
+  AR      arch/arm64/lib/lib.a
+  CC      net/ipv4/netfilter/nf_nat_l3proto_ipv4.o
+  CC      net/ipv4/netfilter/nf_nat_proto_icmp.o
+  CC      lib/lz4/lz4_compress.o
+  CC      kernel/bpf/devmap.o
+  EXPORTS arch/arm64/lib/lib-ksyms.o
+make[1]: *** [/sec/root/kernel/Xiaomi_Kernel_gale/Makefile:1172: arch/arm64/kernel] Error 2
+make[1]: *** Waiting for unfinished jobs....
+  CC      lib/lz4/lz4_decompress.o
+  AR      arch/arm64/lib/built-in.a
+  CC      security/selinux/exports.o
+  CC      net/ipv4/route.o
+  CC      kernel/time/posix-clock.o
+  CC      net/ipv4/inetpeer.o
+  AR      sound/hda/built-in.a
+  CC      drivers/base/power/qos.o
+  CC      drivers/base/power/runtime.o
+  AR      fs/exofs/built-in.a
+  CC      net/ipv4/netfilter/nf_nat_masquerade_ipv4.o
+  CC      net/ipv4/netfilter/nf_defrag_ipv4.o
+  CC      kernel/trace/blktrace.o
+  CC      fs/exportfs/expfs.o
+  CC      security/keys/proc.o
+  CC      block/blk-merge.o
+  CC      block/blk-softirq.o
+  CC      crypto/memneq.o
+  CC      block/blk-timeout.o
+  CC      fs/exfat/exfat_cache.o
+../net/ipv4/route.c:864:6: warning: variable 'log_martians' set but not used [-Wunused-but-set-variable]
+        int log_martians;
+            ^
+  AR      sound/core/seq/built-in.a
+  CC      sound/core/info.o
+  CC      block/blk-lib.o
+  CC      kernel/sched/idle.o
+1 warning generated.
+  AR      fs/crypto/built-in.a
+  CC      block/blk-mq.o
+  CC      block/blk-mq-tag.o
+  CC      block/blk-stat.o
+  CC      block/blk-mq-sysfs.o
+  AR      lib/lz4/built-in.a
+  CC      security/selinux/ss/ebitmap.o
+  CC      lib/lzo/lzo1x_compress.o
+  CC      kernel/bpf/cpumap.o
+  CC      security/keys/sysctl.o
+  CC      net/bridge/br_input.o
+  CC      lib/lzo/lzo1x_decompress_safe.o
+  CC      net/ipv4/netfilter/nf_socket_ipv4.o
+  CC      mm/mmzone.o
+  AR      fs/exportfs/built-in.a
+  CC      kernel/time/itimer.o
+  CC      fs/exfat/exfat_data.o
+  CC      kernel/bpf/offload.o
+  AR      net/ethernet/built-in.a
+  CC      kernel/bpf/stackmap.o
+  CC      drivers/base/power/wakeirq.o
+  CC      crypto/crypto_wq.o
+  CC      crypto/algapi.o
+  CC      kernel/trace/trace_events.o
+  CC      crypto/scatterwalk.o
+  CC      security/selinux/ss/hashtab.o
+  CC      net/ipv4/netfilter/nf_tproxy_ipv4.o
+  AR      security/keys/built-in.a
+  CC      block/blk-mq-cpumap.o
+  CC      kernel/trace/trace_export.o
+  GEN     kernel/kheaders_data.tar.xz
+  CC      net/core/datagram.o
+  CC      block/blk-mq-sched.o
+  CC      net/ipv4/protocol.o
+  CC      sound/core/ctljack.o
+  CC      kernel/trace/trace_event_perf.o
+  CC      net/ipv4/ip_input.o
+  AR      lib/lzo/built-in.a
+  CC      net/ipv4/ip_fragment.o
+  CC      net/ipv4/ip_forward.o
+  CC      net/core/stream.o
+  CC      lib/mpi/generic_mpih-lshift.o
+  CC      net/ipv4/ip_options.o
+  CC      net/ipv4/ip_output.o
+  CC      kernel/time/clockevents.o
+  CC      fs/exfat/exfat_bitmap.o
+  CC      kernel/time/tick-common.o
+  CC      mm/vmstat.o
+  CC      security/selinux/ss/symtab.o
+  CC      fs/exfat/exfat_nls.o
+  CC      security/selinux/ss/sidtab.o
+  CC      sound/core/jack.o
+  CC      security/selinux/ss/avtab.o
+  CC      drivers/base/power/main.o
+  CC      kernel/bpf/cgroup.o
+  CC      kernel/sched/fair.o
+  CC      drivers/base/power/wakeup.o
+  CC      lib/mpi/generic_mpih-mul1.o
+  CC      net/bridge/br_ioctl.o
+  CC      drivers/base/power/wakeup_stats.o
+  CC      kernel/bpf/reuseport_array.o
+  CC      crypto/proc.o
+  CC      block/ioctl.o
+  CC      block/genhd.o
+  CC      fs/exfat/exfat_oal.o
+  CC      crypto/aead.o
+  CC      net/ipv4/ip_sockglue.o
+  CC      kernel/time/tick-broadcast.o
+  CC      kernel/time/tick-broadcast-hrtimer.o
+  CC      net/bridge/br_stp.o
+../kernel/sched/fair.c:6932:16: warning: variable 'target_util' set but not used [-Wunused-but-set-variable]
+        unsigned long target_util = ULONG_MAX;
+                      ^
+../kernel/sched/fair.c:7666:37: warning: comparison of distinct pointer types ('typeof (1) *' (aka 'int *') and 'typeof ((best_energy >> 4)) *' (aka 'unsigned long *')) [-Wcompare-distinct-pointer-types]
+                                if((best_energy - cur_energy) > max(1, (best_energy >> 4))) {
+                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/linux/kernel.h:859:19: note: expanded from macro 'max'
+#define max(x, y)       __careful_cmp(x, y, >)
+                        ^~~~~~~~~~~~~~~~~~~~~~
+../include/linux/kernel.h:843:24: note: expanded from macro '__careful_cmp'
+        __builtin_choose_expr(__safe_cmp(x, y), \
+                              ^~~~~~~~~~~~~~~~
+../include/linux/kernel.h:833:4: note: expanded from macro '__safe_cmp'
+                (__typecheck(x, y) && __no_side_effects(x, y))
+                 ^~~~~~~~~~~~~~~~~
+../include/linux/kernel.h:819:29: note: expanded from macro '__typecheck'
+                (!!(sizeof((typeof(x) *)1 == (typeof(y) *)1)))
+                           ~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~
+  CC      kernel/trace/trace_events_filter.o
+  CC      net/ipv6/netfilter/ip6_tables.o
+  CC      net/ipv4/netfilter/nf_reject_ipv4.o
+  CC      lib/mpi/generic_mpih-mul2.o
+  CC      net/ipv6/netfilter/ip6table_filter.o
+  CC      drivers/base/power/domain.o
+  CC      sound/core/hwdep.o
+  CC      mm/backing-dev.o
+  AR      sound/i2c/other/built-in.a
+  CC      security/selinux/ss/policydb.o
+  CC      crypto/ablkcipher.o
+  AR      sound/i2c/built-in.a
+  CC      net/ipv6/af_inet6.o
+2 warnings generated.
+  CC      fs/exfat/exfat_upcase.o
+  CC      lib/reed_solomon/reed_solomon.o
+  CC      net/core/scm.o
+  CC      net/key/af_key.o
+  CC      kernel/trace/trace_events_trigger.o
+  CC      net/core/gen_stats.o
+  CC      kernel/trace/bpf_trace.o
+  CC      crypto/blkcipher.o
+  CC      kernel/time/sched_clock.o
+  CC      lib/zlib_deflate/deflate.o
+  CC      lib/zlib_inflate/inffast.o
+  CC      lib/mpi/generic_mpih-mul3.o
+  CC      kernel/time/tick-oneshot.o
+  AR      kernel/bpf/built-in.a
+  CC      kernel/sched/rt.o
+  CC      block/partition-generic.o
+  CC      block/ioprio.o
+  CC      lib/zlib_inflate/inflate.o
+  AR      fs/exfat/built-in.a
+  CC      block/badblocks.o
+  CC      fs/ext4/balloc.o
+  CC      fs/f2fs/dir.o
+  CC      net/bridge/br_stp_bpdu.o
+  CC      lib/zlib_inflate/infutil.o
+  CC      lib/zlib_inflate/inftrees.o
+  AR      lib/reed_solomon/built-in.a
+  CC      lib/zlib_inflate/inflate_syms.o
+  CC      fs/f2fs/file.o
+  CC      lib/zlib_deflate/deftree.o
+  CC      fs/f2fs/inode.o
+  CC      security/selinux/ss/services.o
+  CC      sound/core/timer.o
+  CC      fs/f2fs/namei.o
+  CC      drivers/base/power/domain_governor.o
+  CC      kernel/time/tick-sched.o
+  CC      fs/fat/cache.o
+  CC      lib/zlib_deflate/deflate_syms.o
+  CC      lib/mpi/generic_mpih-rshift.o
+../kernel/sched/rt.c:1445:22: warning: variable 'curr' set but not used [-Wunused-but-set-variable]
+        struct task_struct *curr;
+                            ^
+  CC      mm/mm_init.o
+  CC      net/ipv6/anycast.o
+1 warning generated.
+  CC      net/ipv4/netfilter/nf_nat_h323.o
+  AR      net/key/built-in.a
+  CC      crypto/skcipher.o
+  CC      crypto/seqiv.o
+  CC      net/ipv4/inet_hashtables.o
+  CC      net/ipv6/netfilter/ip6table_mangle.o
+  CC      net/ipv6/netfilter/ip6table_raw.o
+  CC      block/blk-rq-qos.o
+  CC      fs/incfs/data_mgmt.o
+  CC      fs/fuse/dev.o
+  CC      net/core/gen_estimator.o
+  CC      fs/isofs/namei.o
+  CC      fs/ext4/bitmap.o
+  CC      kernel/sched/deadline.o
+  CC      drivers/base/power/clock_ops.o
+  CC      fs/jbd2/transaction.o
+../security/selinux/ss/services.c:2314:17: warning: variable 'sidtab' set but not used [-Wunused-but-set-variable]
+        struct sidtab *sidtab;
+                       ^
+../security/selinux/ss/services.c:2403:17: warning: variable 'sidtab' set but not used [-Wunused-but-set-variable]
+        struct sidtab *sidtab;
+                       ^
+../security/selinux/ss/services.c:2448:17: warning: variable 'sidtab' set but not used [-Wunused-but-set-variable]
+        struct sidtab *sidtab;
+                       ^
+../security/selinux/ss/services.c:2799:17: warning: variable 'sidtab' set but not used [-Wunused-but-set-variable]
+        struct sidtab *sidtab;
+                       ^
+  AR      lib/zlib_inflate/built-in.a
+  CC      net/ipv4/netfilter/nf_nat_pptp.o
+  CC      net/ipv4/netfilter/nf_nat_proto_gre.o
+4 warnings generated.
+  CC      fs/fat/dir.o
+  CC      net/bridge/br_stp_if.o
+  CC      lib/mpi/generic_mpih-sub1.o
+  CC      lib/mpi/generic_mpih-add1.o
+  CC      kernel/trace/trace_kprobe.o
+  CC      fs/f2fs/hash.o
+  CC      kernel/trace/power-traces.o
+  AR      lib/zlib_deflate/built-in.a
+  CC      kernel/trace/rpm-traces.o
+../fs/incfs/data_mgmt.c:1065:21: warning: variable 'mi' set but not used [-Wunused-but-set-variable]
+        struct mount_info *mi = NULL;
+                           ^
+  CC      fs/f2fs/super.o
+1 warning generated.
+  CC      fs/f2fs/inline.o
+  CC      mm/mmu_context.o
+  CC      block/scsi_ioctl.o
+  CC      security/selinux/ss/conditional.o
+  HOSTCC  lib/gen_crc32table
+  CC      sound/core/hrtimer.o
+  CC      fs/isofs/inode.o
+  CC      net/ipv4/netfilter/ip_tables.o
+  CC      kernel/time/vsyscall.o
+  CC      fs/incfs/format.o
+  CC      net/ipv4/netfilter/iptable_filter.o
+  CC      fs/ext4/block_validity.o
+  CC      kernel/trace/trace_probe.o
+  CC      lib/mpi/mpicoder.o
+  CC      net/l2tp/l2tp_core.o
+  CC      net/ipv6/netfilter/nf_nat_l3proto_ipv6.o
+  AR      drivers/base/power/built-in.a
+  CC      drivers/base/regmap/regmap.o
+  AR      drivers/base/test/built-in.a
+  CC      kernel/sched/wait.o
+  CC      crypto/echainiv.o
+  CC      fs/f2fs/checkpoint.o
+  CC      fs/incfs/integrity.o
+  CC      net/bridge/br_stp_timer.o
+  CC      fs/incfs/main.o
+  CC      fs/incfs/vfs.o
+  CC      sound/core/pcm.o
+  CC      kernel/time/timer_list_aee.o
+  CC      fs/fuse/dir.o
+  CC      fs/fat/fatent.o
+  CC      fs/fuse/file.o
+  CC      fs/jbd2/commit.o
+  CC      fs/fat/file.o
+  CC      net/core/net_namespace.o
+  CC      fs/isofs/dir.o
+  CC      fs/jbd2/recovery.o
+  CC      mm/percpu.o
+  CC      fs/ext4/dir.o
+  CC      mm/slab_common.o
+  CC      security/selinux/ss/mls.o
+  CC      mm/compaction.o
+  CC      kernel/trace/trace_uprobe.o
+  CC      net/ipv4/netfilter/iptable_mangle.o
+  CC      security/selinux/ss/status.o
+  CC      kernel/trace/mtk_trace.o
+  CC      block/noop-iosched.o
+  CC      block/deadline-iosched.o
+  CC      crypto/ahash.o
+  CC      lib/mpi/mpi-bit.o
+  AR      kernel/time/built-in.a
+  CC      mm/vmacache.o
+  CC      fs/f2fs/gc.o
+  CC      mm/interval_tree.o
+  AR      fs/incfs/built-in.a
+  CC      fs/isofs/util.o
+  CC      mm/list_lru.o
+  CC      net/l2tp/l2tp_ppp.o
+  CC      net/bridge/br_netlink.o
+  CC      fs/jbd2/checkpoint.o
+  CC      net/bridge/br_netlink_tunnel.o
+  CC      fs/ext4/ext4_jbd2.o
+  CC      sound/core/pcm_native.o
+  CC      drivers/base/regmap/regcache.o
+  CC      crypto/shash.o
+  CC      net/bridge/br_arp_nd_proxy.o
+  CC      drivers/base/regmap/regcache-rbtree.o
+  CC      block/cfq-iosched.o
+  CC      net/ipv6/netfilter/nf_nat_proto_icmpv6.o
+  CC      block/mq-deadline.o
+  CC      net/core/secure_seq.o
+  CC      net/core/flow_dissector.o
+  CC [M]  kernel/trace/trace_mmstat.o
+  CC      fs/fat/inode.o
+  CC      fs/fuse/inode.o
+  CC      net/ipv4/netfilter/iptable_nat.o
+  CC      kernel/sched/wait_bit.o
+  CC      kernel/sched/swait.o
+  CC      fs/isofs/rock.o
+  AR      security/selinux/built-in.a
+  AR      security/built-in.a
+  CC      lib/mpi/mpi-cmp.o
+  CC      lib/mpi/mpih-cmp.o
+  CC      kernel/sched/completion.o
+  CC      kernel/sched/stubs.o
+  CC      fs/jbd2/revoke.o
+  CC      fs/f2fs/data.o
+  CC      fs/jbd2/journal.o
+  CC      fs/fuse/control.o
+  CC      net/core/sysctl_net_core.o
+  CC      fs/ext4/extents.o
+  CC      kernel/sched/cpupri.o
+  CC      crypto/akcipher.o
+  CC      mm/workingset.o
+  AR      net/l2tp/built-in.a
+  CC      net/bridge/br_sysfs_if.o
+  CC      net/bridge/br_sysfs_br.o
+  CC      block/kyber-iosched.o
+../fs/jbd2/revoke.c:532:17: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+        int i, offset, count;
+                       ^
+1 warning generated.
+  CC      drivers/base/regmap/regcache-flat.o
+  CC      net/bridge/br_nf_core.o
+  AR      kernel/trace/built-in.a
+  CC      fs/isofs/export.o
+  CC      mm/debug.o
+  CC      mm/gup.o
+  CC      mm/highmem.o
+  CC      net/ipv6/netfilter/nf_defrag_ipv6_hooks.o
+../mm/workingset.c:200:15: warning: variable 'nid' set but not used [-Wunused-but-set-variable]
+        int memcgid, nid;
+                     ^
+1 warning generated.
+  CC      net/ipv6/netfilter/nf_conntrack_reasm.o
+  CC      net/ipv6/netfilter/nf_socket_ipv6.o
+  CC      net/ipv4/netfilter/iptable_raw.o
+  CC      net/ipv6/netfilter/nf_tproxy_ipv6.o
+  CC      lib/mpi/mpih-div.o
+  CC      sound/core/pcm_lib.o
+  CC      fs/fat/misc.o
+  CC      fs/fuse/xattr.o
+  CC      lib/mpi/mpih-mul.o
+  CC      fs/f2fs/node.o
+  CC      drivers/base/regmap/regmap-i2c.o
+  CC      drivers/base/regmap/regmap-spi.o
+  CC      block/compat_ioctl.o
+  CC      fs/isofs/joliet.o
+  CC      fs/ext4/extents_status.o
+  CC      net/ipv6/netfilter/nf_reject_ipv6.o
+  CC      net/ipv6/ip6_output.o
+  CC      fs/ext4/file.o
+  CC      net/bridge/br_multicast.o
+  CC      drivers/base/regmap/regmap-mmio.o
+  CC      crypto/kpp.o
+  CC      lib/mpi/mpi-pow.o
+  AR      fs/jbd2/built-in.a
+  CC      lib/mpi/mpiutil.o
+  CC      fs/f2fs/segment.o
+  CC      kernel/sched/cpudeadline.o
+  CC      fs/kernfs/mount.o
+  CC      fs/fuse/acl.o
+  CC      kernel/sched/topology.o
+  CC      net/core/dev.o
+  CC      net/core/ethtool.o
+  CC      fs/ext4/fsmap.o
+  CC      net/core/dev_addr_lists.o
+  CC      mm/memory.o
+  CC      net/ipv4/netfilter/iptable_security.o
+  CC      fs/isofs/compress.o
+  CC      fs/fat/nfs.o
+  CC      fs/ext4/fsync.o
+  CC      net/ipv4/netfilter/ipt_ah.o
+  CC      net/ipv4/netfilter/ipt_MASQUERADE.o
+  CC      block/blk-mq-virtio.o
+  CC      fs/f2fs/recovery.o
+  CC      kernel/cpu.o
+  CC      fs/kernfs/inode.o
+../mm/memory.c:4519:8: warning: variable 'p4dval' set but not used [-Wunused-but-set-variable]
+        p4d_t p4dval;
+              ^
+  CC      net/ipv4/inet_timewait_sock.o
+  CC      fs/kernfs/dir.o
+  CC      sound/core/pcm_misc.o
+  AR      drivers/base/regmap/built-in.a
+  AR      drivers/cdrom/built-in.a
+  CC      mm/mincore.o
+  CC      drivers/base/component.o
+1 warning generated.
+  CC      fs/fuse/passthrough.o
+  CC      mm/mlock.o
+  CC      fs/kernfs/file.o
+  AR      lib/mpi/built-in.a
+  GEN     lib/oid_registry_data.c
+  CC      fs/fat/namei_vfat.o
+  CC      lib/lockref.o
+  ASN.1   crypto/rsapubkey.asn1.c
+  AR      fs/isofs/built-in.a
+  CC      fs/fat/namei_msdos.o
+  CC      net/bridge/br_mdb.o
+  CC      net/bridge/br_netfilter_hooks.o
+  CC      mm/mmap.o
+  ASN.1   crypto/rsaprivkey.asn1.c
+  CC      crypto/rsa.o
+  CC      kernel/sched/stop_task.o
+  CC      fs/ext4/hash.o
+  CC      crypto/rsa_helper.o
+  CC      net/ipv6/netfilter/ip6t_frag.o
+  CC      sound/core/pcm_memory.o
+  CC      fs/f2fs/shrinker.o
+  CC      drivers/base/core.o
+  CC      kernel/sched/pelt.o
+  CC      kernel/sched/stats.o
+  CC      lib/bcd.o
+  CC      net/ipv4/netfilter/ipt_REJECT.o
+  CC      fs/f2fs/extent_cache.o
+  CC      kernel/sched/debug.o
+  CC      lib/div64.o
+  CC      lib/sort.o
+  AR      fs/fuse/built-in.a
+../mm/mmap.c:2370:16: warning: variable 'new_start' set but not used [-Wunused-but-set-variable]
+        unsigned long new_start;
+                      ^
+  CC      net/ipv4/netfilter/arp_tables.o
+  CC      fs/kernfs/symlink.o
+  CC      block/keyslot-manager.o
+  CC      fs/f2fs/sysfs.o
+  CC      lib/parser.o
+1 warning generated.
+  CC      fs/nls/nls_base.o
+  CC      fs/nls/nls_cp437.o
+  AR      fs/fat/built-in.a
+  CC      fs/nls/nls_cp950.o
+  CC      lib/debug_locks.o
+  CC      lib/random32.o
+  CC      crypto/rsa-pkcs1pad.o
+  CC      fs/notify/dnotify/dnotify.o
+  CC      fs/ext4/ialloc.o
+  CC      block/bio-crypt-ctx.o
+  CC      crypto/acompress.o
+  CC      crypto/scompress.o
+  CC      net/bridge/br_netfilter_ipv6.o
+  CC      net/ipv6/ip6_input.o
+  CC      fs/ext4/indirect.o
+  CC      net/core/dst.o
+  CC      fs/ext4/inline.o
+  CC      fs/ext4/inode.o
+  CC      fs/ext4/ioctl.o
+  CC      mm/mprotect.o
+  CC      net/ipv6/netfilter/ip6t_ipv6header.o
+  CC      net/ipv6/netfilter/ip6t_rpfilter.o
+  CC      net/ipv4/inet_connection_sock.o
+  CC      net/ipv4/tcp.o
+  CC      sound/core/memalloc.o
+  CC      fs/f2fs/debug.o
+  CC      lib/bust_spinlocks.o
+  CC      fs/ext4/mballoc.o
+  AR      fs/kernfs/built-in.a
+  CC      fs/nls/nls_ascii.o
+  CC      lib/kasprintf.o
+  CC      lib/bitmap.o
+  AR      fs/notify/dnotify/built-in.a
+  CC      net/llc/llc_core.o
+  AR      fs/notify/fanotify/built-in.a
+  CC      drivers/base/bus.o
+  CC      mm/mremap.o
+  CC      fs/notify/inotify/inotify_fsnotify.o
+  CC      kernel/sched/tune.o
+  CC      fs/notify/fsnotify.o
+  CC      fs/notify/notification.o
+  CC      block/blk-crypto.o
+  CC      block/blk-crypto-fallback.o
+  CC      fs/nls/nls_iso8859-1.o
+  CC      fs/nls/nls_utf8.o
+  CC      drivers/base/dd.o
+  CC      kernel/sched/cpuacct.o
+  CC      drivers/base/syscore.o
+  AR      net/bridge/built-in.a
+  CC      drivers/base/driver.o
+  CC      net/ipv4/netfilter/arpt_mangle.o
+  AR      sound/isa/ad1816a/built-in.a
+  CC      net/ipv4/netfilter/arptable_filter.o
+  AR      sound/isa/ad1848/built-in.a
+  CC      fs/notify/inotify/inotify_user.o
+  AR      sound/isa/cs423x/built-in.a
+  CC      fs/notify/group.o
+  AR      sound/isa/es1688/built-in.a
+  CC      fs/f2fs/xattr.o
+  CC      crypto/algboss.o
+  AR      sound/isa/galaxy/built-in.a
+  CC      drivers/base/class.o
+  CC      fs/ext4/migrate.o
+  CC      net/ipv6/netfilter/ip6t_REJECT.o
+  AR      sound/isa/gus/built-in.a
+  AR      sound/isa/msnd/built-in.a
+  AR      sound/isa/opti9xx/built-in.a
+  AR      sound/isa/sb/built-in.a
+  CC      mm/msync.o
+  AR      sound/isa/wavefront/built-in.a
+  CC      sound/core/pcm_timer.o
+  AR      sound/isa/wss/built-in.a
+  AR      sound/isa/built-in.a
+  CC      sound/core/seq_device.o
+  CC      fs/notify/mark.o
+  CC      lib/scatterlist.o
+  CC      lib/gcd.o
+  CC      sound/core/rawmidi.o
+  AR      fs/nls/built-in.a
+  CC      fs/notify/fdinfo.o
+  CC      fs/f2fs/acl.o
+  CC      net/core/netevent.o
+  CC      mm/page_vma_mapped.o
+  CC      lib/lcm.o
+  CC      fs/f2fs/verity.o
+  CC      net/llc/llc_input.o
+  CC      net/llc/llc_output.o
+  CC      fs/ext4/mmp.o
+  AR      block/built-in.a
+  CC      kernel/sched/cpufreq.o
+  CC      fs/ext4/move_extent.o
+  CC      drivers/base/platform.o
+  CC      drivers/base/cpu.o
+  AR      fs/notify/inotify/built-in.a
+  CC      drivers/base/firmware.o
+  CC      kernel/sched/cpufreq_schedutil.o
+  CC      kernel/exit.o
+  CC      kernel/softirq.o
+  CC      kernel/resource.o
+  CC      fs/ext4/namei.o
+  AR      net/ipv4/netfilter/built-in.a
+  CC      crypto/testmgr.o
+  CC      net/ipv4/tcp_input.o
+  CC      net/ipv4/tcp_output.o
+  CC      kernel/sched/membarrier.o
+  AR      drivers/char/agp/built-in.a
+  CC      kernel/sched/isolation.o
+  AR      drivers/char/ipmi/built-in.a
+  CC      drivers/char/hw_random/core.o
+  AR      fs/notify/built-in.a
+  CC      drivers/char/rpmb/rpmb-mtk.o
+  AR      net/ipv6/netfilter/built-in.a
+  CC      fs/overlayfs/super.o
+  CC      net/ipv6/addrconf.o
+  CC      drivers/char/rpmb/core.o
+  CC      net/ipv6/addrlabel.o
+  CC      mm/pagewalk.o
+  CC      drivers/char/hw_random/mtk-rng.o
+  CC      drivers/base/init.o
+  CC      lib/list_sort.o
+  AR      fs/f2fs/built-in.a
+  CC      net/ipv6/route.o
+  CC      net/core/neighbour.o
+  AR      sound/core/built-in.a
+  CC      net/ipv6/ip6_fib.o
+  AR      sound/mips/built-in.a
+  CC      fs/overlayfs/namei.o
+  AR      sound/parisc/built-in.a
+  CC      lib/uuid.o
+  AR      sound/pci/ac97/built-in.a
+  AR      sound/pci/ali5451/built-in.a
+  AR      sound/pci/asihpi/built-in.a
+  AR      sound/pci/au88x0/built-in.a
+  AR      sound/pci/aw2/built-in.a
+  CC      net/ipv6/ipv6_sockglue.o
+  AR      sound/pci/ca0106/built-in.a
+  CC      net/ipv6/ndisc.o
+  CC      fs/ext4/page-io.o
+  CC      net/ipv6/udp.o
+  CC      net/core/rtnetlink.o
+  AR      sound/pci/cs46xx/built-in.a
+  CC      drivers/char/hw_random/mt67xx-rng.o
+  AR      sound/pci/cs5535audio/built-in.a
+  AR      sound/pci/ctxfi/built-in.a
+  CC      kernel/sysctl.o
+  AR      sound/pci/echoaudio/built-in.a
+  CC      mm/pgtable-generic.o
+  AR      sound/pci/emu10k1/built-in.a
+  CC      drivers/base/map.o
+  AR      sound/pci/hda/built-in.a
+  AR      sound/pci/ice1712/built-in.a
+  CC      kernel/sysctl_binary.o
+  CC      net/core/utils.o
+  AR      sound/pci/korg1212/built-in.a
+  AR      net/llc/built-in.a
+  CC      lib/flex_array.o
+  CC      lib/iov_iter.o
+  AR      sound/pci/lola/built-in.a
+  CC      lib/clz_ctz.o
+  CC      net/core/link_watch.o
+  AR      sound/pci/lx6464es/built-in.a
+../net/ipv6/ip6_fib.c:1632:6: warning: variable 'iter' set but not used [-Wunused-but-set-variable]
+        int iter = 0;
+            ^
+  AR      sound/pci/mixart/built-in.a
+  CC      crypto/crypto_user.o
+  AR      sound/pci/nm256/built-in.a
+1 warning generated.
+  AR      sound/pci/oxygen/built-in.a
+  CC      kernel/capability.o
+  AR      sound/pci/pcxhr/built-in.a
+  CC      net/ipv6/udplite.o
+  AR      sound/pci/riptide/built-in.a
+  CC      fs/overlayfs/util.o
+  AR      sound/pci/rme9652/built-in.a
+  AR      sound/pci/trident/built-in.a
+  AR      sound/pci/vx222/built-in.a
+  CC      net/core/filter.o
+  AR      sound/pci/ymfpci/built-in.a
+  CC      net/core/sock_diag.o
+  AR      drivers/char/rpmb/built-in.a
+  AR      sound/pci/built-in.a
+  CC      net/core/dev_ioctl.o
+  AR      drivers/char/hw_random/built-in.a
+  CC      drivers/char/mem.o
+  AR      sound/pcmcia/pdaudiocf/built-in.a
+  CC      drivers/base/devres.o
+  AR      sound/pcmcia/vx/built-in.a
+  AR      sound/pcmcia/built-in.a
+  CC      drivers/char/random.o
+  AR      sound/ppc/built-in.a
+  CC      net/ipv6/raw.o
+  AR      sound/sh/built-in.a
+  CC      fs/ext4/readpage.o
+  AR      sound/soc/adi/built-in.a
+  CC      mm/rmap.o
+  AR      sound/sparc/built-in.a
+  CC      kernel/sched/psi.o
+  AR      sound/spi/built-in.a
+  CC      fs/ext4/resize.o
+  AR      sound/soc/amd/built-in.a
+  CC      fs/ext4/super.o
+  AR      sound/soc/atmel/built-in.a
+  AR      sound/soc/au1x/built-in.a
+  CC      net/ipv4/tcp_timer.o
+  AR      sound/soc/bcm/built-in.a
+  AR      sound/soc/cirrus/built-in.a
+  CC      sound/soc/codecs/fs15xx/fs15xx.o
+  CC      fs/overlayfs/inode.o
+  CC      sound/soc/codecs/lct_audio_pa_info/lct_audio_info.o
+  CC      mm/vmalloc.o
+  CC      crypto/cmac.o
+../mm/rmap.c:963:17: warning: variable 'cstart' set but not used [-Wunused-but-set-variable]
+                unsigned long cstart;
+                              ^
+1 warning generated.
+  CC      crypto/hmac.o
+  AR      sound/soc/davinci/built-in.a
+  CC      crypto/xcbc.o
+  CC      mm/process_vm_access.o
+  CC      mm/init-mm.o
+  CC      lib/bsearch.o
+  CC      mm/nobootmem.o
+  CC      drivers/base/attribute_container.o
+  CC      drivers/base/transport_class.o
+  CC      drivers/base/topology.o
+  CC      net/ipv6/icmp.o
+  CC      net/ipv6/mcast.o
+  CC      fs/overlayfs/file.o
+  CC      drivers/base/container.o
+  CC      drivers/char/misc.o
+  CC      fs/overlayfs/dir.o
+  CC      net/ipv6/reassembly.o
+  CC      fs/overlayfs/readdir.o
+  CC      fs/ext4/symlink.o
+  CC      fs/ext4/sysfs.o
+  CC      fs/overlayfs/copy_up.o
+  CC      fs/overlayfs/export.o
+  AR      kernel/sched/built-in.a
+  CC      crypto/crypto_null.o
+  AR      sound/soc/codecs/lct_audio_pa_info/built-in.a
+  AR      sound/soc/dwc/built-in.a
+  CC      crypto/md5.o
+  AR      sound/synth/emux/built-in.a
+  CC      fs/ext4/xattr.o
+  AR      sound/synth/built-in.a
+  CC      crypto/sha1_generic.o
+  AR      sound/usb/6fire/built-in.a
+  AR      sound/usb/bcd2000/built-in.a
+  AR      sound/soc/fsl/built-in.a
+  AR      sound/soc/generic/built-in.a
+  AR      sound/usb/caiaq/built-in.a
+  AR      sound/usb/hiface/built-in.a
+  CC      net/ipv4/tcp_ipv4.o
+  AR      sound/usb/misc/built-in.a
+  CC      net/ipv4/tcp_minisocks.o
+  AR      sound/usb/usx2y/built-in.a
+  CC      net/netfilter/core.o
+  CC      net/ipv4/tcp_cong.o
+  CC      sound/usb/card.o
+  AR      drivers/clk/actions/built-in.a
+  CC      drivers/base/property.o
+  CC      lib/find_bit.o
+  AR      drivers/clk/bcm/built-in.a
+  AR      sound/soc/codecs/fs15xx/built-in.a
+  AR      drivers/clk/imgtec/built-in.a
+  CC      sound/soc/codecs/richtek_spm_cls.o
+  CC      net/ipv4/tcp_metrics.o
+  CC      net/core/tso.o
+  CC      drivers/clk/mediatek/clk-fixup-div.o
+  CC      drivers/clk/mediatek/clk-mtk.o
+  AR      sound/soc/hisilicon/built-in.a
+  CC      drivers/clocksource/timer-of.o
+  AR      sound/soc/img/built-in.a
+  CC      lib/llist.o
+  AR      drivers/clk/mvebu/built-in.a
+  CC      sound/soc/codecs/mt6358.o
+  CC      drivers/base/cacheinfo.o
+  AR      sound/x86/built-in.a
+  CC      net/netlink/af_netlink.o
+  AR      sound/xen/built-in.a
+  CC      net/netlink/genetlink.o
+  CC      mm/madvise.o
+  CC      mm/memblock.o
+  CC      mm/page_io.o
+  AR      fs/overlayfs/built-in.a
+  CC      lib/memweight.o
+  CC      sound/sound_core.o
+  CC      sound/last.o
+  AR      drivers/char/built-in.a
+  CC      drivers/base/devcon.o
+  CC      drivers/cpufreq/cpufreq.o
+  CC      net/ipv4/tcp_fastopen.o
+  CC      net/ipv6/tcp_ipv6.o
+  CC      lib/kfifo.o
+  CC      fs/ext4/xattr_trusted.o
+  CC      drivers/clocksource/timer-probe.o
+  CC      drivers/cpuidle/governors/menu.o
+  CC      drivers/cpuidle/governors/mtk_menu.o
+  CC      drivers/cpuidle/cpuidle.o
+  CC      crypto/sha256_generic.o
+  AR      sound/soc/intel/boards/built-in.a
+  AR      sound/soc/intel/common/built-in.a
+  CC      crypto/sha512_generic.o
+  CC      crypto/gf128mul.o
+  AR      sound/soc/intel/built-in.a
+  CC      net/ipv6/ping.o
+  CC      drivers/clk/mediatek/clk-pll.o
+  AR      sound/soc/jz4740/built-in.a
+  CC      drivers/clk/mediatek/clk-gate.o
+  CC      sound/usb/clock.o
+  AR      sound/soc/kirkwood/built-in.a
+  AR      drivers/crypto/hisilicon/built-in.a
+  AR      drivers/crypto/built-in.a
+  CC      sound/soc/codecs/mt6660.o
+  CC      sound/soc/mediatek/common/mtk-mmap-ion.o
+  CC [M]  sound/soc/codecs/mt6357-accdet.o
+  CC      drivers/devfreq/devfreq.o
+  CC      net/ipv6/exthdrs.o
+  CC      drivers/cpuidle/driver.o
+  CC      drivers/clocksource/mmio.o
+  CC      drivers/clocksource/timer-mediatek.o
+  CC      mm/swap_state.o
+  CC      fs/ext4/xattr_user.o
+  CC      fs/ext4/acl.o
+  CC      drivers/base/module.o
+  CC      net/netfilter/nf_log.o
+  CC      fs/ext4/xattr_security.o
+  AR      drivers/cpuidle/governors/built-in.a
+  CC      drivers/base/soc.o
+  AR      sound/soc/meson/built-in.a
+  CC      net/core/sock_reuseport.o
+  CC      net/netfilter/nf_queue.o
+  CC      lib/percpu-refcount.o
+../sound/soc/codecs/mt6357-accdet.c:619:6: error: variable 'ret' set but not used [-Werror,-Wunused-but-set-variable]
+        int ret = 0;
+            ^
+../sound/soc/codecs/mt6357-accdet.c:702:6: error: variable 'ret' set but not used [-Werror,-Wunused-but-set-variable]
+        int ret = 0;
+            ^
+../sound/soc/codecs/mt6357-accdet.c:1496:22: error: variable 'acc_sts' set but not used [-Werror,-Wunused-but-set-variable]
+        u32 irq_status = 0, acc_sts = 0, eint_sts = 0;
+                            ^
+../sound/soc/codecs/mt6357-accdet.c:1496:35: error: variable 'eint_sts' set but not used [-Werror,-Wunused-but-set-variable]
+        u32 irq_status = 0, acc_sts = 0, eint_sts = 0;
+                                         ^
+../sound/soc/codecs/mt6357-accdet.c:1566:6: error: variable 'ret' set but not used [-Werror,-Wunused-but-set-variable]
+        int ret = 0;
+            ^
+../sound/soc/codecs/mt6357-accdet.c:1975:19: error: variable 'res' set but not used [-Werror,-Wunused-but-set-variable]
+        struct resource *res;
+                         ^
+6 errors generated.
+make[4]: *** [../scripts/Makefile.build:339: sound/soc/codecs/mt6357-accdet.o] Error 1
+make[4]: *** Waiting for unfinished jobs....
+  CC      net/netfilter/nf_sockopt.o
+  CC      net/core/fib_notifier.o
+../drivers/base/module.c:36:6: warning: variable 'no_warn' set but not used [-Wunused-but-set-variable]
+        int no_warn;
+            ^
+1 warning generated.
+  CC      net/nfc/core.o
+  CC      sound/usb/endpoint.o
+  CC      drivers/cpufreq/freq_table.o
+  CC      net/nfc/netlink.o
+  CC      crypto/ecb.o
+  CC      sound/soc/mediatek/common/mtk-afe-platform-driver.o
+  AR      net/netlink/built-in.a
+  CC      drivers/cpuidle/governor.o
+  CC      drivers/clocksource/arm_arch_timer.o
+  CC      sound/soc/mediatek/common/mtk-afe-fe-dai.o
+  CC      drivers/clk/mediatek/clk-apmixed.o
+  CC      drivers/base/pinctrl.o
+  CC      net/ipv4/tcp_rate.o
+  CC      drivers/devfreq/helio-dvfsrc-ipi.o
+  CC      drivers/devfreq/helio-dvfsrc-v2/helio-dvfsrc.o
+  CC      mm/swapfile.o
+  CC      mm/swap_slots.o
+  CC      drivers/devfreq/helio-dvfsrc-v2/helio-dvfsrc-mt6768.o
+  CC      crypto/cbc.o
+  CC      crypto/cts.o
+  CC      fs/ext4/verity.o
+  CC      drivers/cpufreq/cpufreq_stats.o
+make[3]: *** [../scripts/Makefile.build:637: sound/soc/codecs] Error 2
+make[3]: *** Waiting for unfinished jobs....
+  CC      drivers/cpufreq/cpufreq_times.o
+  CC      net/core/xdp.o
+  CC      lib/rhashtable.o
+../drivers/devfreq/helio-dvfsrc-ipi.c:42:22: warning: variable 'qos_task' set but not used [-Wunused-but-set-variable]
+        struct task_struct *qos_task;
+                            ^
+1 warning generated.
+  CC      sound/usb/format.o
+  CC      net/core/net-sysfs.o
+  CC      drivers/clk/mediatek/clk-cpumux.o
+  CC      net/packet/af_packet.o
+  CC      drivers/base/platform-msi.o
+  CC      drivers/cpufreq/cpufreq_performance.o
+  CC      net/ipv6/datagram.o
+  CC      drivers/cpuidle/sysfs.o
+  CC      drivers/devfreq/helio-dvfsrc-v2/helio-dvfsrc-opp-mt6768.o
+  CC      mm/dmapool.o
+  CC      drivers/devfreq/helio-dvfsrc-v2/helio-dvfsrc-opp.o
+  CC      crypto/xts.o
+  CC      drivers/clocksource/dummy_timer.o
+  AR      drivers/clk/renesas/built-in.a
+  CC      net/core/net-procfs.o
+  CC      net/core/fib_rules.o
+  CC      crypto/ctr.o
+  CC      sound/usb/helper.o
+  AR      fs/ext4/built-in.a
+  CC      sound/usb/mixer.o
+  CC      net/core/net-traces.o
+  CC      sound/usb/mixer_quirks.o
+  CC      drivers/clk/mediatek/reset.o
+  CC      drivers/cpufreq/cpufreq_powersave.o
+  CC      net/core/dst_cache.o
+  CC      net/netfilter/utils.o
+  CC      sound/soc/mediatek/common/mtk-sram-manager.o
+  CC      fs/proc/task_mmu.o
+  CC      net/core/gro_cells.o
+  CC      drivers/cpuidle/dt_idle_states.o
+  CC      drivers/cpuidle/cpuidle-mtk_acao.o
+  CC      net/nfc/af_nfc.o
+  CC      lib/reciprocal_div.o
+  CC      drivers/devfreq/helio-dvfsrc-v2/helio-dvfsrc-sysfs.o
+../sound/usb/mixer.c:1902:28: warning: variable 'first_ch_bits' set but not used [-Wunused-but-set-variable]
+        unsigned int master_bits, first_ch_bits;
+                                  ^
+  AR      drivers/clocksource/built-in.a
+  CC      drivers/base/arch_topology.o
+  CC      drivers/cpufreq/cpufreq_userspace.o
+  CC      net/nfc/rawsock.o
+  CC      net/ipv4/tcp_recovery.o
+1 warning generated.
+  CC      drivers/cpufreq/cpufreq_ondemand.o
+  CC      drivers/cpufreq/cpufreq_governor.o
+  CC      net/ipv6/ip6_flowlabel.o
+  CC      net/ipv6/inet6_connection_sock.o
+  CC      lib/once.o
+  CC      drivers/clk/mediatek/clk-mux.o
+  CC      crypto/gcm.o
+  CC      mm/sparse.o
+  CC      mm/sparse-vmemmap.o
+  CC      mm/slub.o
+  CC      mm/migrate.o
+  CC      drivers/clk/mediatek/clkchk.o
+  CC      drivers/clk/mediatek/clk-mt6768.o
+  CC      sound/usb/mixer_scarlett.o
+  CC      drivers/clk/mediatek/clk-mtk-v1.o
+  CC      fs/proc/inode.o
+  AR      drivers/devfreq/built-in.a
+  CC      sound/soc/mediatek/common/mtk-sp-pcm-ops.o
+  AR      drivers/cpuidle/built-in.a
+  CC      drivers/dma/mediatek/mtk-uart-apdma.o
+  CC      drivers/dma-buf/dma-buf.o
+  AR      drivers/base/built-in.a
+../drivers/clk/mediatek/clk-mt6768.c:3053:21: warning: variable 'clk26cali_0' set but not used [-Wunused-but-set-variable]
+        unsigned int temp, clk26cali_0, clk_dbg_cfg;
+                           ^
+../drivers/clk/mediatek/clk-mt6768.c:3054:31: warning: variable 'clk26cali_1' set but not used [-Wunused-but-set-variable]
+        unsigned int clk_misc_cfg_0, clk26cali_1;
+                                     ^
+../drivers/clk/mediatek/clk-mt6768.c:3097:21: warning: variable 'clk26cali_0' set but not used [-Wunused-but-set-variable]
+        unsigned int temp, clk26cali_0, clk_dbg_cfg;
+                           ^
+../drivers/clk/mediatek/clk-mt6768.c:3098:31: warning: variable 'clk26cali_1' set but not used [-Wunused-but-set-variable]
+        unsigned int clk_misc_cfg_0, clk26cali_1;
+                                     ^
+  CC      net/netfilter/nfnetlink.o
+4 warnings generated.
+  CC      lib/refcount.o
+  CC      net/netfilter/nfnetlink_queue.o
+  AR      net/packet/built-in.a
+  CC      net/netfilter/nfnetlink_log.o
+  AR      drivers/energy_model/built-in.a
+  CC      fs/proc/root.o
+  CC      fs/proc/base.o
+  CC      fs/pstore/inode.o
+  CC      fs/quota/dquot.o
+  CC      fs/pstore/platform.o
+  CC      net/ipv4/tcp_ulp.o
+  CC      crypto/ccm.o
+  AR      drivers/dma/qcom/built-in.a
+  CC      fs/proc/generic.o
+  CC      drivers/cpufreq/cpufreq_governor_attr_set.o
+  CC      drivers/clk/mediatek/clk-mt6768-pg.o
+  AR      drivers/dma/ti/built-in.a
+  CC      drivers/clk/mediatek/clkdbg.o
+  AR      drivers/dma/xilinx/built-in.a
+  CC      net/netfilter/nf_conntrack_core.o
+  CC      sound/soc/mediatek/common/mtk-afe-debug.o
+  CC      sound/usb/mixer_us16x08.o
+  CC      fs/pstore/pmsg.o
+  CC      fs/pstore/ram.o
+  CC      lib/usercopy.o
+  CC      net/nfc/llcp_core.o
+  CC      sound/soc/mediatek/mt6768/mt6768-afe-pcm.o
+  AR      net/core/built-in.a
+../fs/quota/dquot.c:1054:6: warning: variable 'reserved' set but not used [-Wunused-but-set-variable]
+        int reserved = 0;
+            ^
+  CC      fs/pstore/ram_core.o
+  AR      drivers/dma/mediatek/built-in.a
+  CC      drivers/dma/dmaengine.o
+../drivers/clk/mediatek/clk-mt6768-pg.c:3670:6: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+        int ret = 0;
+            ^
+  CC      fs/proc/array.o
+1 warning generated.
+1 warning generated.
+../drivers/clk/mediatek/clkdbg.c:698:8: warning: variable 'ign' set but not used [-Wunused-but-set-variable]
+        char *ign;
+              ^
+../drivers/clk/mediatek/clkdbg.c:754:8: warning: variable 'ign' set but not used [-Wunused-but-set-variable]
+        char *ign;
+              ^
+../drivers/clk/mediatek/clkdbg.c:856:8: warning: variable 'ign' set but not used [-Wunused-but-set-variable]
+        char *ign;
+              ^
+../drivers/clk/mediatek/clkdbg.c:888:8: warning: variable 'ign' set but not used [-Wunused-but-set-variable]
+        char *ign;
+              ^
+../drivers/clk/mediatek/clkdbg.c:937:8: warning: variable 'ign' set but not used [-Wunused-but-set-variable]
+        char *ign;
+              ^
+../drivers/clk/mediatek/clkdbg.c:1126:8: warning: variable 'ign' set but not used [-Wunused-but-set-variable]
+        char *ign;
+              ^
+  CC      net/nfc/llcp_commands.o
+6 warnings generated.
+  CC      sound/soc/mediatek/mt6768/mt6768-afe-clk.o
+  CC      lib/errseq.o
+  CC      net/ipv6/udp_offload.o
+  CC      net/sched/sch_generic.o
+  CC      mm/page_counter.o
+  CC      net/sched/sch_mq.o
+  CC      drivers/dma-buf/dma-fence.o
+  CC      drivers/dma-buf/dma-fence-array.o
+  CC      net/ipv4/tcp_offload.o
+  CC      drivers/dma-buf/reservation.o
+  CC      drivers/dma-buf/seqno-fence.o
+  CC      drivers/clk/clk-devres.o
+  AR      drivers/clk/ti/built-in.a
+  CC      crypto/chacha20poly1305.o
+  CC      lib/bucket_locks.o
+  CC      net/sched/sch_api.o
+  CC      sound/usb/pcm.o
+  CC      net/nfc/llcp_sock.o
+  AR      drivers/cpufreq/built-in.a
+  CC      mm/memcontrol.o
+  CC      sound/usb/power.o
+  AR      fs/pstore/built-in.a
+  CC      drivers/dma/virt-dma.o
+  CC      sound/soc/mediatek/mt6768/mt6768-afe-gpio.o
+  CC      fs/quota/quota_v2.o
+  CC      fs/quota/quota_tree.o
+  CC      drivers/extcon/extcon.o
+  AR      drivers/firewire/built-in.a
+  CC      drivers/extcon/devres.o
+  CC      fs/proc/fd.o
+  CC      mm/vmpressure.o
+  AR      drivers/clk/mediatek/built-in.a
+  CC      sound/soc/mediatek/common/mtk-sp-spk-amp.o
+  CC      sound/usb/proc.o
+  CC      sound/usb/quirks.o
+  CC      drivers/dma-buf/sync_file.o
+  AR      drivers/firmware/broadcom/built-in.a
+  AR      drivers/firmware/meson/built-in.a
+  CC      kernel/ptrace.o
+  CC      net/netfilter/nf_conntrack_standalone.o
+  CC      kernel/user.o
+  AR      drivers/firmware/tegra/built-in.a
+  CC      drivers/firmware/psci.o
+  CC      drivers/clk/clk-bulk.o
+  CC      kernel/signal.o
+  CC      kernel/sys.o
+  CC      crypto/cryptd.o
+  CC      net/ipv6/seg6.o
+  CC      lib/string_helpers.o
+  CC      kernel/umh.o
+  CC      net/netfilter/nf_conntrack_expect.o
+  CC      sound/soc/mediatek/mt6768/mt6768-dai-adda.o
+  AR      net/nfc/built-in.a
+  CC      fs/proc/proc_tty.o
+  CC      fs/proc/cmdline.o
+  CC      net/netfilter/nf_conntrack_helper.o
+  CC      crypto/des_generic.o
+  CC      crypto/blowfish_generic.o
+  CC      lib/hexdump.o
+  CC      lib/kstrtox.o
+  CC      net/netfilter/nf_conntrack_proto.o
+  CC      fs/quota/quota.o
+  CC      drivers/dma/of-dma.o
+  CC      sound/usb/stream.o
+  AR      drivers/extcon/built-in.a
+  CC      net/netfilter/nf_conntrack_proto_generic.o
+  CC      fs/quota/kqid.o
+  CC      net/ipv4/datagram.o
+  AR      drivers/firmware/built-in.a
+  CC      net/ipv4/raw.o
+  CC      net/ipv4/udp.o
+  CC      drivers/clk/clkdev.o
+  CC      net/sched/sch_blackhole.o
+  AR      drivers/dma-buf/built-in.a
+  CC      drivers/clk/clk.o
+  CC      lib/pci_iomap.o
+  CC      sound/soc/mediatek/common/mtk-usip.o
+  CC      kernel/workqueue.o
+  CC      fs/proc/consoles.o
+  CC      sound/soc/mediatek/mt6768/mt6768-afe-control.o
+  CC      sound/soc/mediatek/mt6768/mt6768-dai-i2s.o
+  CC      sound/soc/mediatek/mt6768/mt6768-dai-hw-gain.o
+  CC      net/ipv6/fib6_notifier.o
+  CC      fs/proc/cpuinfo.o
+  CC      kernel/pid.o
+  CC      mm/swap_cgroup.o
+  CC      mm/page_isolation.o
+  CC      crypto/blowfish_common.o
+  CC      sound/usb/validate.o
+  CC      sound/usb/midi.o
+../drivers/clk/clk.c:641:24: warning: variable 'ignore' set but not used [-Wunused-but-set-variable]
+        int level, rc = 0, i, ignore;
+                              ^
+  CC      drivers/gpio/devres.o
+1 warning generated.
+  CC      lib/iomap_copy.o
+  CC      fs/quota/netlink.o
+  AR      drivers/dma/built-in.a
+  CC      crypto/twofish_generic.o
+  CC      net/netfilter/nf_conntrack_proto_tcp.o
+  CC      net/netfilter/nf_conntrack_proto_udp.o
+  CC      drivers/gpio/gpiolib.o
+  CC      sound/soc/mediatek/common/mtk-btcvsd.o
+  AR      drivers/gpu/drm/amd/lib/built-in.a
+  CC      lib/devres.o
+  AR      drivers/gpu/drm/bridge/synopsys/built-in.a
+  CC      net/sched/cls_api.o
+  CC      net/sched/act_api.o
+  AR      drivers/gpu/drm/bridge/built-in.a
+  AR      drivers/gpu/drm/hisilicon/built-in.a
+  CC      fs/proc/devices.o
+  AR      drivers/gpu/drm/i2c/built-in.a
+  CC      lib/logic_pio.o
+  AR      drivers/gpu/drm/omapdrm/displays/built-in.a
+  AR      drivers/hwtracing/intel_th/built-in.a
+  AR      drivers/gpu/drm/omapdrm/dss/built-in.a
+  CC      mm/zsmalloc.o
+  AR      drivers/gpu/drm/omapdrm/built-in.a
+  AR      drivers/gpu/drm/panel/built-in.a
+  CC      drivers/hid/usbhid/hid-core.o
+  AR      drivers/gpu/drm/tilcdc/built-in.a
+  CC      drivers/gpio/gpiolib-legacy.o
+  AR      drivers/gpu/drm/built-in.a
+  CC      sound/soc/mediatek/mt6768/mt6768-dai-pcm.o
+  CC      net/sctp/sm_statetable.o
+$GED: CONFIG_MTK_PLATFORM is ["mt6768"]
+  CC      net/ipv6/sysctl_net_ipv6.o
+  CC      drivers/gpu/mediatek/ged/src/ged.o
+  CC      drivers/gpu/mediatek/ged/src/ged_base.o
+  CC      drivers/gpu/mediatek/ged/src/ged_main.o
+  CC      net/netfilter/nf_conntrack_proto_icmp.o
+  CC      mm/early_ioremap.o
+  CC      crypto/twofish_common.o
+  CC      drivers/gpio/gpiolib-devprop.o
+  AR      drivers/gpu/vga/built-in.a
+  CC      fs/proc/interrupts.o
+  CC      fs/proc/loadavg.o
+  CC      drivers/clk/clk-divider.o
+  CC      sound/soc/mediatek/mt6768/mt6768-dai-hostless.o
+  CC      lib/hweight.o
+  CC      net/ipv4/udplite.o
+  AR      sound/soc/mediatek/common/built-in.a
+  AR      sound/usb/built-in.a
+  CC      net/ipv6/ip6mr.o
+*MTK_GPU_VERSION 2 = valhall
+*MTK_GPU_VERSION 3 = r32p1
+mali MTK evironment, building r32p1 DDK
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY := y
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY_NAME := "mt6768"
+mali MTK evironment, building r32p1 DDK
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY := y
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY_NAME := "mt6768"
+  CC      net/sctp/sm_statefuns.o
+mali MTK evironment, building r32p1 DDK
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY := y
+mtk-Kbuild CONFIG_MALI_PLATFORM_THIRDPARTY_NAME := "mt6768"
+  AR      drivers/i2c/algos/built-in.a
+  AR      drivers/i3c/built-in.a
+  CC      drivers/i2c/busses/i2c-mtk.o
+  CC      sound/soc/mediatek/mt6768/mt6768-misc-control.o
+  CC      fs/proc/meminfo.o
+  CC      crypto/aes_generic.o
+  CC      lib/assoc_array.o
+  CC      crypto/arc4.o
+  AR      fs/quota/built-in.a
+  CC      sound/soc/mediatek/mt6768/mt6768-mt6358.o
+  CC      net/netfilter/nf_conntrack_extend.o
+  CC      net/netfilter/nf_conntrack_acct.o
+  CC      crypto/chacha_generic.o
+  CC      fs/proc/stat.o
+  CC      drivers/gpu/mediatek/gpu_mali/mali_valhall/mali-r32p1/drivers/gpu/arm/midgard/platform/mtk_platform_common/mtk_platform_common.o
+  CC      drivers/gpu/mediatek/ged/src/ged_sysfs.o
+  CC      drivers/gpu/mediatek/gpufreq/mt6768/mtk_picachu.o
+  CC      mm/cma.o
+  CC      drivers/gpu/mediatek/hal/mtk_gpu_utility.o
+  CC      drivers/gpio/gpiolib-of.o
+  AR      drivers/hid/usbhid/built-in.a
+  CC      drivers/hid/hid-core.o
+  CC      drivers/hid/hid-input.o
+  CC      drivers/hid/hid-quirks.o
+  CC      fs/ramfs/inode.o
+  CC      lib/list_debug.o
+  CC      mm/frame_vector.o
+  CC      drivers/hid/hidraw.o
+  CC      drivers/i2c/busses/i2c-mtk_debug.o
+  CC      drivers/clk/clk-fixed-factor.o
+  CC      drivers/clk/clk-fixed-rate.o
+  CC      net/sched/act_police.o
+  CC      net/ipv6/xfrm6_policy.o
+  CC      net/sched/act_mirred.o
+  CC      fs/proc/uptime.o
+  CC      crypto/poly1305_generic.o
+  CC      drivers/gpu/mediatek/ged/src/ged_hal.o
+  CC      lib/bitrev.o
+  CC      fs/proc/util.o
+  AR      sound/soc/mediatek/mt6768/built-in.a
+../drivers/i2c/busses/i2c-mtk_debug.c:378:8: warning: variable 'buf_test' set but not used [-Wunused-but-set-variable]
+        char *buf_test;
+              ^
+  CC      lib/rational.o
+1 warning generated.
+  CC      crypto/deflate.o
+  AR      sound/soc/mediatek/built-in.a
+make[2]: *** [../scripts/Makefile.build:637: sound/soc] Error 2
+make[1]: *** [/sec/root/kernel/Xiaomi_Kernel_gale/Makefile:1172: sound] Error 2
+  CC      fs/proc/version.o
+  CC      fs/proc/softirqs.o
+  CC      lib/crc-ccitt.o
+  CC      net/sctp/sm_sideeffect.o
+  CC      drivers/gpu/mediatek/gpufreq/mt6768/mtk_gpufreq_core.o
+  CC      net/sctp/protocol.o
+  CC      fs/ramfs/file-mmu.o
+  CC      fs/proc/namespaces.o
+  CC      net/ipv4/udp_offload.o
+  AR      drivers/gpu/mediatek/hal/built-in.a
+  CC      drivers/gpu/mediatek/ged/src/ged_log.o
+  CC      fs/proc/self.o
+../drivers/gpu/mediatek/ged/src/ged_hal.c:212:9: warning: unused variable 'j' [-Wunused-variable]
+        int i, j;
+               ^
+  CC      crypto/crc32c_generic.o
+1 warning generated.
+  AR      drivers/gpio/built-in.a
+  CC      drivers/gpu/mediatek/gpu_mali/mali_valhall/mali-r32p1/drivers/gpu/arm/midgard/platform/mtk_platform_common/mtk_gpu_dvfs.o
+  CC      drivers/gpu/mediatek/gpu_mali/mali_valhall/mali-r32p1/drivers/gpu/arm/midgard/platform/mtk_platform_common/mtk_mfg_counter.o
+  CC      fs/proc/thread_self.o
+  CC      kernel/task_work.o
+  CC      drivers/clk/clk-gate.o
+  CC      drivers/clk/clk-multiplier.o
+  CC      net/sctp/endpointola.o
+  AR      drivers/idle/built-in.a
+  CC      net/sctp/associola.o
+  CC      net/sctp/transport.o
+  CC      net/sctp/chunk.o
+  CC      drivers/hid/uhid.o
+  CC      net/sctp/sm_make_chunk.o
+  CC      net/ipv6/xfrm6_state.o
+  CC      net/sched/act_ipt.o
+  CC      crypto/crc32_generic.o
+  AR      drivers/i2c/busses/built-in.a
+  CC      net/ipv6/xfrm6_input.o
+  AR      drivers/i2c/muxes/built-in.a
+  CC      net/ipv4/arp.o
+  CC      mm/usercopy.o
+  CC      drivers/i2c/i2c-boardinfo.o
+  CC      kernel/extable.o
+  AR      fs/ramfs/built-in.a
+  CC      net/sctp/ulpevent.o
+../drivers/gpu/mediatek/ged/src/ged_log.c:845:12: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+        GED_ERROR err;
+                  ^
+../drivers/gpu/mediatek/ged/src/ged_log.c:863:12: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+        GED_ERROR err;
+                  ^
+../drivers/gpu/mediatek/gpu_mali/mali_valhall/mali-r32p1/drivers/gpu/arm/midgard/platform/mtk_platform_common/mtk_mfg_counter.c:543:7: warning: variable 'shader_block' set but not used [-Wunused-but-set-variable]
+                int shader_block, block_type, i, j, name_offset, data_offset, cnt, nr_hwc_blocks;
+                    ^
+../drivers/gpu/mediatek/gpu_mali/mali_valhall/mali-r32p1/drivers/gpu/arm/midgard/platform/mtk_platform_common/mtk_mfg_counter.c:629:35: warning: variable 'data_offset' set but not used [-Wunused-but-set-variable]
+                int nr_hwc_blocks, name_offset, data_offset;
+                                                ^
+../drivers/gpu/mediatek/gpu_mali/mali_valhall/mali-r32p1/drivers/gpu/arm/midgard/platform/mtk_platform_common/mtk_mfg_counter.c:772:23: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+int gator_gpu_pmu_init()
+                      ^
+                       void
+../drivers/gpu/mediatek/gpu_mali/mali_valhall/mali-r32p1/drivers/gpu/arm/midgard/platform/mtk_platform_common/mtk_mfg_counter.c:776:6: warning: variable 'nr_hwc_blocks' set but not used [-Wunused-but-set-variable]
+        int nr_hwc_blocks, name_offset, data_offset;
+            ^
+3 warnings and 1 error generated.
+make[7]: *** [../scripts/Makefile.build:333: drivers/gpu/mediatek/gpu_mali/mali_valhall/mali-r32p1/drivers/gpu/arm/midgard/platform/mtk_platform_common/mtk_mfg_counter.o] Error 1
+make[7]: *** Waiting for unfinished jobs....
+  CC      crypto/authenc.o
+2 warnings generated.
+  CC      net/netfilter/nf_conntrack_seqadj.o
+  CC      lib/crc16.o
+  CC      lib/libcrc32c.o
+  AR      drivers/iio/accel/built-in.a
+  CC      fs/proc/proc_sysctl.o
+  CC      drivers/iio/adc/mt635x-auxadc_v1.o
+  CC      drivers/iio/adc/mt6577_auxadc.o
+  CC      net/netfilter/nf_conntrack_proto_icmpv6.o
+  CC      net/sctp/inqueue.o
+  CC      drivers/clk/clk-mux.o
+  CC      fs/proc/proc_net.o
+  CC      fs/sdcardfs/dentry.o
+  CC      net/unix/af_unix.o
+  CC      drivers/i2c/i2c-core-base.o
+  CC      net/netfilter/nf_conntrack_ecache.o
+  CC      net/sched/sch_fifo.o
+  CC      net/netfilter/nf_conntrack_proto_dccp.o
+make[6]: *** [../scripts/Makefile.build:637: drivers/gpu/mediatek/gpu_mali/mali_valhall/mali-r32p1/drivers/gpu/arm/midgard] Error 2
+make[5]: *** [../scripts/Makefile.build:637: drivers/gpu/mediatek/gpu_mali/mali_valhall] Error 2
+make[4]: *** [../scripts/Makefile.build:637: drivers/gpu/mediatek/gpu_mali] Error 2
+make[4]: *** Waiting for unfinished jobs....
+  CC      drivers/hid/hid-generic.o
+  CC      fs/proc/kmsg.o
+  CC      net/unix/garbage.o
+  CC      kernel/params.o
+  CC      net/unix/sysctl_net_unix.o
+  CC      drivers/gpu/mediatek/gpufreq/mt6768/mtk_gpu_log.o
+  CC      net/ipv4/icmp.o
+  CC      drivers/gpu/mediatek/gpufreq/mt6768/mtk_gpu_bw.o
+  CC      mm/memfd.o
+  CC      drivers/gpu/mediatek/ged/src/ged_bridge.o
+  CC      drivers/gpu/mediatek/ged/src/ged_monitor_3D_fence.o
+  AR      drivers/iio/adc/built-in.a
+  CC      net/sctp/outqueue.o
+  AR      drivers/iio/afe/built-in.a
+  CC      lib/genalloc.o
+  CC      fs/sdcardfs/file.o
+  AR      drivers/iio/amplifiers/built-in.a
+  AR      drivers/iio/buffer/built-in.a
+  AR      drivers/iio/chemical/built-in.a
+  CC      drivers/input/fingerprint/fpc/mtk_spi.o
+  AR      drivers/iio/common/cros_ec_sensors/built-in.a
+  AR      drivers/iio/common/hid-sensors/built-in.a
+  AR      drivers/iio/counter/built-in.a
+  AR      drivers/iio/common/ms_sensors/built-in.a
+  CC      net/unix/scm.o
+  AR      drivers/iio/common/ssp_sensors/built-in.a
+  AR      drivers/iio/common/st_sensors/built-in.a
+  AR      drivers/iio/common/built-in.a
+  CC      net/ipv6/xfrm6_output.o
+  CC      drivers/clk/clk-composite.o
+  AR      drivers/iio/dac/built-in.a
+  AR      drivers/iio/dummy/built-in.a
+  CC      drivers/clk/clk-fractional-divider.o
+  AR      drivers/iio/frequency/built-in.a
+  CC      net/sctp/ulpqueue.o
+  CC      drivers/hid/hid-a4tech.o
+  AR      drivers/iio/gyro/built-in.a
+  CC      crypto/authencesn.o
+  CC      kernel/kthread.o
+  AR      drivers/iio/health/built-in.a
+  AR      drivers/iio/humidity/built-in.a
+  CC      net/sctp/tsnmap.o
+  CC      fs/sysfs/file.o
+  AR      drivers/iio/imu/bmi160/built-in.a
+  CC      crypto/lzo.o
+  AR      drivers/iio/imu/inv_mpu6050/built-in.a
+  AR      drivers/iio/imu/st_lsm6dsx/built-in.a
+  CC      fs/sdcardfs/inode.o
+  AR      drivers/iio/imu/built-in.a
+  AR      drivers/iio/light/built-in.a
+  AR      drivers/iio/magnetometer/built-in.a
+  CC      drivers/gpu/mediatek/ged/src/ged_notify_sw_vsync.o
+  CC      fs/sdcardfs/main.o
+  CC      net/sched/sch_htb.o
+  AR      drivers/iio/multiplexer/built-in.a
+  AR      drivers/iio/orientation/built-in.a
+  CC      net/sched/sch_ingress.o
+  AR      drivers/iio/potentiometer/built-in.a
+  AR      drivers/iio/potentiostat/built-in.a
+  AR      mm/built-in.a
+  CC      fs/proc/page.o
+  CC      net/netfilter/nf_conntrack_proto_sctp.o
+  CC      kernel/sys_ni.o
+  AR      drivers/iio/pressure/built-in.a
+  AR      drivers/iio/proximity/built-in.a
+  AR      drivers/iio/resolver/built-in.a
+  CC      net/ipv6/xfrm6_protocol.o
+  AR      drivers/iio/temperature/built-in.a
+  CC      fs/sdcardfs/super.o
+  CC      drivers/clk/clk-gpio.o
+  AR      drivers/iio/trigger/built-in.a
+  CC      drivers/iio/industrialio-core.o
+  CC      lib/textsearch.o
+  AR      drivers/gpu/mediatek/gpufreq/mt6768/built-in.a
+  AR      drivers/gpu/mediatek/gpufreq/built-in.a
+  CC      drivers/hid/hid-apple.o
+  CC      drivers/iio/industrialio-event.o
+  CC      kernel/nsproxy.o
+  CC      crypto/lz4.o
+  CC      drivers/i2c/i2c-core-smbus.o
+  CC      drivers/i2c/i2c-core-of.o
+  CC      net/sched/cls_u32.o
+  CC      net/sctp/bind_addr.o
+  CC      fs/sdcardfs/lookup.o
+  CC      drivers/clk/clk-conf.o
+  CC      crypto/rng.o
+  AR      drivers/input/fingerprint/fpc/built-in.a
+  CC      crypto/drbg.o
+  CC      drivers/gpu/mediatek/ged/src/ged_hashtable.o
+  CC      drivers/input/fingerprint/goodix/gf_spi_tee.o
+  CC      fs/sysfs/dir.o
+  AR      fs/proc/built-in.a
+  CC      fs/sysfs/symlink.o
+  CC      crypto/jitterentropy.o
+  CC      drivers/input/fingerprint/silead/silead_fp.o
+../crypto/jitterentropy.c:668:6: warning: variable 'count_var' set but not used [-Wunused-but-set-variable]
+        int count_var = 0;
+            ^
+1 warning generated.
+  CC      crypto/jitterentropy-kcapi.o
+  CC      fs/sysfs/mount.o
+  CC      net/ipv4/devinet.o
+  CC      net/ipv6/netfilter.o
+  CC      net/ipv6/fib6_rules.o
+  CC      drivers/i2c/i2c-dev.o
+../fs/sdcardfs/lookup.c:89:30: warning: variable 'info' set but not used [-Wunused-but-set-variable]
+        struct sdcardfs_inode_info *info;
+                                    ^
+../fs/sdcardfs/lookup.c:261:27: warning: variable 'sbi' set but not used [-Wunused-but-set-variable]
+        struct sdcardfs_sb_info *sbi;
+                                 ^
+2 warnings generated.
+  CC      drivers/hid/hid-belkin.o
+  CC      drivers/hid/hid-cherry.o
+  CC      net/sctp/socket.o
+  AR      net/unix/built-in.a
+  CC      drivers/hid/hid-chicony.o
+  CC      drivers/gpu/mediatek/ged/src/ged_thread.o
+  CC      drivers/gpu/mediatek/ged/src/ged_ge.o
+  CC      lib/ts_kmp.o
+  CC      drivers/gpu/mediatek/ged/src/ged_dvfs.o
+  CC      fs/sdcardfs/mmap.o
+  CC      kernel/notifier.o
+  CC      crypto/ghash-generic.o
+  GEN     net/wireless/shipped-certs.c
+  CC      net/wireless/core.o
+../drivers/input/fingerprint/goodix/gf_spi_tee.c:219:6: warning: unused variable 'status' [-Wunused-variable]
+        int status = -EINVAL;
+            ^
+../drivers/input/fingerprint/goodix/gf_spi_tee.c:1175:19: warning: variable 'ms' set but not used [-Wunused-but-set-variable]
+        struct mt_spi_t *ms = NULL;
+                         ^
+../drivers/input/fingerprint/goodix/gf_spi_tee.c:1933:6: warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+        int status = -EINVAL;
+            ^
+../drivers/input/fingerprint/goodix/gf_spi_tee.c:2237:1: warning: unused label 'err_buf' [-Wunused-label]
+err_buf:
+^~~~~~~~
+../drivers/input/fingerprint/goodix/gf_spi_tee.c:2242:1: warning: unused label 'err' [-Wunused-label]
+err:
+^~~~
+../drivers/input/fingerprint/goodix/gf_spi_tee.c:2317:6: warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+        int status = -EINVAL;
+            ^
+../drivers/input/fingerprint/goodix/gf_spi_tee.c:2317:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+../drivers/input/fingerprint/goodix/gf_spi_tee.c:116:29: warning: unused variable 'fp_wakesrc' [-Wunused-variable]
+static struct wakeup_source fp_wakesrc;
+                            ^
+../drivers/input/fingerprint/goodix/gf_spi_tee.c:300:12: warning: unused function 'gf_get_sensor_dts_info' [-Wunused-function]
+static int gf_get_sensor_dts_info(void)
+           ^
+../drivers/input/fingerprint/goodix/gf_spi_tee.c:318:13: warning: unused function 'gf_power_on' [-Wunused-function]
+static void gf_power_on(struct gf_device *gf_dev)
+            ^
+10 warnings generated.
+  CC      drivers/iio/inkern.o
+In file included from ../drivers/input/fingerprint/silead/silead_fp.c:267:
+../drivers/input/fingerprint/silead/silead_fp_mtk.c:382:22: warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+    struct mt_spi_t *ms = NULL;
+                     ^
+  CC      drivers/gpu/mediatek/ged/src/ged_gpu_tuner.o
+  CC      net/sched/cls_fw.o
+  CC      net/wireless/sysfs.o
+  CC      drivers/clk/clk-xgene.o
+1 warning generated.
+  CC      crypto/hash_info.o
+  CC      drivers/gpu/mediatek/ged/src/ged_kpi.o
+  CC      fs/sdcardfs/packagelist.o
+  CC      drivers/iommu/iommu.o
+  CC      lib/ts_bm.o
+../net/sctp/socket.c:1113:6: warning: variable 'addrcnt' set but not used [-Wunused-but-set-variable]
+        int addrcnt = 0;
+            ^
+  CC      net/xfrm/xfrm_policy.o
+  CC      drivers/input/joystick/xpad.o
+../drivers/gpu/mediatek/ged/src/ged_dvfs.c:410:22: warning: variable 'ui32LastPredictMaxBW' set but not used [-Wunused-but-set-variable]
+        static unsigned int ui32LastPredictMaxBW;
+                            ^
+../drivers/gpu/mediatek/ged/src/ged_dvfs.c:411:22: warning: variable 'ui32LastPredictAvgBW' set but not used [-Wunused-but-set-variable]
+        static unsigned int ui32LastPredictAvgBW;
+                            ^
+../drivers/gpu/mediatek/ged/src/ged_dvfs.c:412:22: warning: variable 'ui32LastActivePredictAvgBW' set but not used [-Wunused-but-set-variable]
+        static unsigned int ui32LastActivePredictAvgBW;
+                            ^
+../drivers/gpu/mediatek/ged/src/ged_dvfs.c:417:11: warning: variable 'ui64AvgBW' set but not used [-Wunused-but-set-variable]
+        uint64_t ui64AvgBW = 0;
+                 ^
+../drivers/gpu/mediatek/ged/src/ged_dvfs.c:806:15: warning: variable 'ui32CurFreqID' set but not used [-Wunused-but-set-variable]
+        unsigned int ui32CurFreqID;
+                     ^
+../drivers/gpu/mediatek/ged/src/ged_dvfs.c:1011:8: warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+                        int i32NewFreqID =
+                            ^
+../drivers/gpu/mediatek/ged/src/ged_dvfs.c:987:13: warning: variable 'pre_frame_idx' set but not used [-Wunused-but-set-variable]
+        static int pre_frame_idx;
+                   ^
+../drivers/gpu/mediatek/ged/src/ged_dvfs.c:1920:15: warning: variable 'gpu_freq_pre' set but not used [-Wunused-but-set-variable]
+        unsigned int gpu_freq_pre;
+                     ^
+  CC      drivers/irqchip/irqchip.o
+8 warnings generated.
+  CC      drivers/hid/hid-cypress.o
+  CC      drivers/i2c/i2c-mux.o
+  CC      net/socket.o
+  CC      drivers/leds/trigger/ledtrig-timer.o
+  CC      net/compat.o
+  CC      net/netfilter/nf_conntrack_proto_gre.o
+  CC      fs/sysfs/group.o
+  CC      drivers/input/fingerprint/goodix/gf_spi_factory.o
+  CC      drivers/input/keyboard/mediatek/kpd.o
+1 warning generated.
+  CC      drivers/input/keyboard/mediatek/mt6768/hal_kpd.o
+../drivers/gpu/mediatek/ged/src/ged_kpi.c:52:9: warning: 'GED_TAG' macro redefined [-Wmacro-redefined]
+#define GED_TAG "[GED_KPI]"
+        ^
+../drivers/gpu/mediatek/ged/include/ged_base.h:12:9: note: previous definition is here
+#define GED_TAG "[GPU/GED]"
+        ^
+1 warning generated.
+  CC      crypto/simd.o
+  CC      net/ipv6/proc.o
+  AR      drivers/clk/built-in.a
+  CC      lib/ts_fsm.o
+  CC      drivers/input/misc/uinput.o
+  CC      drivers/irqchip/irq-gic.o
+  AR      drivers/leds/trigger/built-in.a
+  AR      drivers/iio/built-in.a
+  CC      drivers/leds/led-core.o
+  AR      drivers/input/joystick/built-in.a
+  CC      drivers/hid/hid-dr.o
+  CC      drivers/hid/hid-ezkey.o
+  CC      drivers/hid/hid-gyration.o
+  CC      drivers/hid/hid-kensington.o
+  CC      net/sched/cls_flow.o
+  CC      fs/sdcardfs/derived_perm.o
+  CC      drivers/hid/hid-kye.o
+  CC      net/ipv4/af_inet.o
+  CC      net/sctp/primitive.o
+  CC      drivers/irqchip/irq-gic-common.o
+  CC      net/wireless/radiotap.o
+  CC      drivers/input/fingerprint/silead/silead_fp_stub.o
+  AR      drivers/i2c/built-in.a
+  AR      fs/sysfs/built-in.a
+  CC      net/wireless/util.o
+  CC      net/xfrm/xfrm_state.o
+  CC      net/wireless/reg.o
+../drivers/gpu/mediatek/ged/src/ged_kpi.c:52:9: warning: 'GED_TAG' macro redefined [-Wmacro-redefined]
+#define GED_TAG "[GED_KPI]"
+        ^
+../drivers/gpu/mediatek/ged/include/ged_base.h:12:9: note: previous definition is here
+#define GED_TAG "[GPU/GED]"
+        ^
+1 warning generated.
+  CC      lib/percpu_counter.o
+  AR      drivers/gpu/mediatek/ged/built-in.a
+  AR      drivers/input/keyboard/mediatek/mt6768/built-in.a
+make[3]: *** [../scripts/Makefile.build:637: drivers/gpu/mediatek] Error 2
+make[2]: *** [../scripts/Makefile.build:637: drivers/gpu] Error 2
+make[2]: *** Waiting for unfinished jobs....
+  CC      lib/audit.o
+  AR      drivers/input/keyboard/mediatek/built-in.a
+  AR      drivers/input/keyboard/built-in.a
+  CC      net/netfilter/nf_conntrack_netlink.o
+  CC      drivers/iommu/iommu-traces.o
+  AR      drivers/input/fingerprint/goodix/built-in.a
+  CC      net/ipv4/igmp.o
+  AR      drivers/input/misc/built-in.a
+  CC      net/xfrm/xfrm_hash.o
+  CC      net/ipv4/fib_frontend.o
+  CC      net/netfilter/nf_conntrack_amanda.o
+  CC      net/netfilter/nf_conntrack_ftp.o
+  CC      net/netfilter/nf_conntrack_h323_main.o
+  CC      lib/compat_audit.o
+  CC      net/netfilter/nf_conntrack_h323_asn1.o
+  CC      drivers/hid/hid-lg.o
+  CC      drivers/irqchip/irq-gic-v3.o
+  AR      fs/sdcardfs/built-in.a
+  CC      drivers/irqchip/irq-gic-v3-mbi.o
+  CC      net/ipv6/syncookies.o
+  CC      drivers/input/touchscreen/mediatek/ft8057p_spi/focaltech_core.o
+  CC      fs/tracefs/inode.o
+  CC      drivers/leds/led-class.o
+  CC      drivers/input/fingerprint/silead/silead_fp_spi.o
+  CC      drivers/irqchip/irq-gic-v3-its.o
+  CC      crypto/rsapubkey.asn1.o
+  CC      crypto/rsaprivkey.asn1.o
+  AR      crypto/built-in.a
+  CC      drivers/hid/hid-magicmouse.o
+  CC      lib/fault-inject.o
+  CC      lib/syscall.o
+  CC      net/ipv6/ah6.o
+  CC      net/sched/cls_bpf.o
+  CC      net/sctp/output.o
+  CC      net/netfilter/nf_conntrack_irc.o
+  CC      drivers/input/touchscreen/mediatek/ft8057p_spi/focaltech_ex_fun.o
+  CC      drivers/input/touchscreen/mediatek/ft8057p_spi/focaltech_ex_mode.o
+  CC      drivers/input/touchscreen/mediatek/ft8057p_spi/focaltech_gesture.o
+  AR      fs/tracefs/built-in.a
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_driver.o
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_core.o
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_sfctrlv2.o
+  SHIPPED fs/unicode/utf8data.h
+  CC      fs/unicode/utf8-core.o
+  CC      fs/verity/enable.o
+  AR      drivers/input/fingerprint/silead/built-in.a
+  AR      drivers/input/fingerprint/built-in.a
+  CC      net/xfrm/xfrm_input.o
+  CC      drivers/irqchip/irq-gic-v3-its-platform-msi.o
+../drivers/input/touchscreen/mediatek/ft8057p_spi/focaltech_ex_fun.c:1214:13: error: variable 'num_read_chars' set but not used [-Werror,-Wunused-but-set-variable]
+    ssize_t num_read_chars = 0;
+            ^
+1 error generated.
+make[6]: *** [../scripts/Makefile.build:333: drivers/input/touchscreen/mediatek/ft8057p_spi/focaltech_ex_fun.o] Error 1
+make[6]: *** Waiting for unfinished jobs....
+  CC      net/netfilter/nf_conntrack_broadcast.o
+  CC      drivers/leds/led-triggers.o
+  CC      drivers/hid/hid-microsoft.o
+  CC      fs/verity/hash_algs.o
+  CC      fs/verity/init.o
+  CC      net/ipv4/fib_semantics.o
+  CC      drivers/iommu/iommu-sysfs.o
+  CC      net/ipv4/fib_trie.o
+  CC      net/ipv4/fib_notifier.o
+  CC      fs/verity/measure.o
+  CC      net/wireless/scan.o
+  CC      drivers/input/input.o
+  CC      lib/dynamic_debug.o
+make[5]: *** [../scripts/Makefile.build:637: drivers/input/touchscreen/mediatek/ft8057p_spi] Error 2
+make[5]: *** Waiting for unfinished jobs....
+  CC      net/xfrm/xfrm_output.o
+  CC      net/sched/ematch.o
+  CC      net/xfrm/xfrm_sysctl.o
+  CC      net/xfrm/xfrm_replay.o
+  CC      drivers/irqchip/irq-gic-v4.o
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_spi_flash.o
+  CC      net/sctp/input.o
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_firmware.o
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_test.o
+  CC      net/ipv6/esp6.o
+  CC      net/ipv6/ipcomp6.o
+  CC      fs/unicode/utf8-norm.o
+  CC      drivers/hid/hid-monterey.o
+  CC      drivers/hid/hid-nintendo.o
+  CC      drivers/hid/hid-pl.o
+  CC      fs/verity/open.o
+  CC      net/sctp/debug.o
+  AR      drivers/leds/built-in.a
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_charger_detect.o
+  CC      net/netfilter/nf_conntrack_netbios_ns.o
+  CC      net/ipv4/inet_fragment.o
+  CC      drivers/irqchip/irq-partition-percpu.o
+  CC      drivers/iommu/dma-iommu.o
+  CC      drivers/iommu/iova.o
+  CC      drivers/iommu/of_iommu.o
+  CC      net/sysctl_net.o
+  CC      drivers/hid/hid-petalynx.o
+  CC      net/ipv4/ping.o
+  CC      net/ipv4/ip_tunnel_core.o
+  CC      net/ipv4/gre_offload.o
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_earjack_detect.o
+  AR      fs/unicode/built-in.a
+  CC      drivers/hid/hid-samsung.o
+  CC      net/xfrm/xfrm_device.o
+  CC      net/netfilter/nf_conntrack_pptp.o
+  CC      drivers/hid/hid-sjoy.o
+  CC      fs/open.o
+  CC      net/netfilter/nf_conntrack_sane.o
+../drivers/iommu/dma-iommu.c:1128:26: warning: variable 'prev' set but not used [-Wunused-but-set-variable]
+        struct scatterlist *s, *prev = NULL;
+                                ^
+../drivers/iommu/dma-iommu.c:1129:9: warning: variable 'iova_len' set but not used [-Wunused-but-set-variable]
+        size_t iova_len = 0;
+               ^
+../drivers/iommu/dma-iommu.c:1130:9: warning: variable 'map_len' set but not used [-Wunused-but-set-variable]
+        size_t map_len = 0;
+               ^
+  CC      fs/verity/verify.o
+3 warnings generated.
+  CC      net/netfilter/nf_conntrack_tftp.o
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_tcs.o
+  CC      net/ipv6/xfrm6_tunnel.o
+  CC      net/sctp/stream.o
+  CC      drivers/input/input-compat.o
+  CC      lib/nlattr.o
+  CC      net/sched/em_u32.o
+  CC      drivers/irqchip/irq-mtk-sysirq.o
+  CC      drivers/irqchip/irq-mtk-cirq.o
+  CC      net/ipv6/tunnel6.o
+  CC      net/wireless/nl80211.o
+  CC      net/ipv6/xfrm6_mode_transport.o
+  CC      kernel/ksysfs.o
+  CC      net/ipv6/xfrm6_mode_tunnel.o
+  CC      net/ipv6/xfrm6_mode_ro.o
+  CC      drivers/hid/hid-sony.o
+  CC      fs/read_write.o
+  CC      fs/verity/signature.o
+  CC      drivers/hid/hid-sunplus.o
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_platform.o
+  AR      drivers/iommu/built-in.a
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_tool.o
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_sysfs.o
+  CC      drivers/hid/hid-gaff.o
+  CC      net/xfrm/xfrm_proc.o
+  AR      drivers/irqchip/built-in.a
+  CC      net/ipv4/metrics.o
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_strerror.o
+  CC      drivers/input/touchscreen/mediatek/icnl9916_spi/cts_oem.o
+  CC      net/xfrm/xfrm_algo.o
+  CC      net/ipv6/xfrm6_mode_beet.o
+  CC      drivers/input/input-mt.o
+  AR      net/sched/built-in.a
+  CC      drivers/input/ff-core.o
+  CC      drivers/input/input-leds.o
+  CC      net/sctp/auth.o
+  CC      net/sctp/offload.o
+../drivers/input/touchscreen/mediatek/icnl9916_spi/cts_platform.c:452:29: error: variable 'cts_data' set but not used [-Werror,-Wunused-but-set-variable]
+    struct chipone_ts_data *cts_data;
+                            ^
+  CC      net/netfilter/nf_nat_core.o
+../drivers/input/touchscreen/mediatek/icnl9916_spi/cts_platform.c:1022:29: error: variable 'cts_data' set but not used [-Werror,-Wunused-but-set-variable]
+    struct chipone_ts_data *cts_data;
+                            ^
+2 errors generated.
+make[6]: *** [../scripts/Makefile.build:333: drivers/input/touchscreen/mediatek/icnl9916_spi/cts_platform.o] Error 1
+make[6]: *** Waiting for unfinished jobs....
+  CC      drivers/input/evdev.o
+  CC      net/ipv6/mip6.o
+  CC      lib/checksum.o
+  CC      lib/cpu_rmap.o
+  CC      net/netfilter/nf_nat_proto_unknown.o
+  CC      net/ipv4/netlink.o
+  CC      net/ipv4/ip_tunnel.o
+  CC      kernel/cred.o
+  CC      drivers/hid/hid-tmff.o
+  CC      net/ipv4/sysctl_net_ipv4.o
+  CC      drivers/input/touchscreen/of_touchscreen.o
+  CC      net/ipv4/proc.o
+../drivers/input/touchscreen/mediatek/icnl9916_spi/cts_oem.c:651:13: error: variable 'len' set but not used [-Werror,-Wunused-but-set-variable]
+        int len;
+            ^
+../drivers/input/touchscreen/mediatek/icnl9916_spi/cts_oem.c:740:13: error: variable 'len' set but not used [-Werror,-Wunused-but-set-variable]
+        int len;
+            ^
+../drivers/input/touchscreen/mediatek/icnl9916_spi/cts_oem.c:1614:9: error: variable 'normal_rawdata_frames' set but not used [-Werror,-Wunused-but-set-variable]
+    int normal_rawdata_frames;
+        ^
+../drivers/input/touchscreen/mediatek/icnl9916_spi/cts_oem.c:1617:9: error: variable 'normal_noise_frames' set but not used [-Werror,-Wunused-but-set-variable]
+    int normal_noise_frames;
+        ^
+4 errors generated.
+make[6]: *** [../scripts/Makefile.build:333: drivers/input/touchscreen/mediatek/icnl9916_spi/cts_oem.o] Error 1
+  CC      kernel/reboot.o
+  AR      fs/verity/built-in.a
+  CC      net/wireless/mlme.o
+  CC      fs/file_table.o
+  CC      net/netfilter/nf_nat_proto_common.o
+  CC      kernel/async.o
+make[5]: *** [../scripts/Makefile.build:637: drivers/input/touchscreen/mediatek/icnl9916_spi] Error 2
+make[4]: *** [../scripts/Makefile.build:637: drivers/input/touchscreen/mediatek] Error 2
+make[4]: *** Waiting for unfinished jobs....
+  CC      kernel/range.o
+  CC      net/ipv4/fib_rules.o
+  CC      net/wireless/ibss.o
+../drivers/input/touchscreen/of_touchscreen.c:80:17: warning: use of bitwise '|' with boolean operands [-Wbitwise-instead-of-logical]
+        data_present = touchscreen_get_prop_u32(dev, "touchscreen-size-x",
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../drivers/input/touchscreen/of_touchscreen.c:80:17: note: cast one or both operands to int to silence this warning
+../drivers/input/touchscreen/of_touchscreen.c:91:17: warning: use of bitwise '|' with boolean operands [-Wbitwise-instead-of-logical]
+        data_present = touchscreen_get_prop_u32(dev, "touchscreen-size-y",
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../drivers/input/touchscreen/of_touchscreen.c:91:17: note: cast one or both operands to int to silence this warning
+../drivers/input/touchscreen/of_touchscreen.c:102:17: warning: use of bitwise '|' with boolean operands [-Wbitwise-instead-of-logical]
+        data_present = touchscreen_get_prop_u32(dev,
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../drivers/input/touchscreen/of_touchscreen.c:102:17: note: cast one or both operands to int to silence this warning
+3 warnings generated.
+  CC      net/wireless/sme.o
+  CC      net/wireless/chan.o
+  CC      fs/super.o
+  CC      net/xfrm/xfrm_user.o
+  CC      fs/char_dev.o
+  CC      lib/dynamic_queue_limits.o
+  CC      lib/glob.o
+  CC      drivers/hid/hid-topseed.o
+  CC      net/ipv4/ipmr.o
+  CC      drivers/hid/hid-twinhan.o
+  CC      fs/stat.o
+  CC      net/sctp/stream_sched.o
+  CC      net/ipv6/ip6_vti.o
+  CC      net/sctp/stream_sched_prio.o
+  CC      net/netfilter/nf_nat_proto_udp.o
+make[3]: *** [../scripts/Makefile.build:637: drivers/input/touchscreen] Error 2
+make[2]: *** [../scripts/Makefile.build:637: drivers/input] Error 2
+  CC      net/netfilter/nf_nat_proto_tcp.o
+  CC      net/wireless/ethtool.o
+  CC      kernel/smpboot.o
+  CC      net/ipv6/sit.o
+  CC      net/ipv6/ip6_tunnel.o
+  CC      net/ipv6/addrconf_core.o
+  CC      net/ipv4/ipmr_base.o
+  CC      fs/exec.o
+  CC      kernel/ucount.o
+  CC      drivers/hid/hid-zpff.o
+  CC      net/ipv6/exthdrs_core.o
+  CC      net/ipv4/ipip.o
+  CC      lib/strncpy_from_user.o
+  CC      net/ipv4/gre_demux.o
+  CC      net/ipv4/udp_tunnel.o
+  CC      net/ipv4/ip_vti.o
+  CC      net/ipv4/syncookies.o
+  CC      net/ipv4/ah4.o
+  CC      fs/pipe.o
+  CC      fs/namei.o
+  CC      net/netfilter/nf_nat_helper.o
+  CC      fs/fcntl.o
+  CC      net/ipv4/esp4.o
+  CC      net/ipv4/ipcomp.o
+  CC      net/wireless/mesh.o
+  CC      net/sctp/stream_sched_rr.o
+  CC      net/netfilter/nf_nat_proto_dccp.o
+  CC      net/netfilter/nf_nat_proto_sctp.o
+  CC      net/netfilter/nf_nat_redirect.o
+  AR      drivers/hid/built-in.a
+  CC      net/sctp/stream_interleave.o
+  CC      net/sctp/proc.o
+make[1]: *** [/sec/root/kernel/Xiaomi_Kernel_gale/Makefile:1172: drivers] Error 2
+  CC      fs/ioctl.o
+  CC      fs/readdir.o
+  CC      kernel/kmod.o
+  CC      net/xfrm/xfrm_ipcomp.o
+  CC      lib/strnlen_user.o
+  CC      net/xfrm/xfrm_interface.o
+  CC      net/wireless/ap.o
+  CC      net/ipv4/xfrm4_tunnel.o
+  CC      net/wireless/trace.o
+  CC      net/wireless/ocb.o
+  CC      net/ipv6/ip6_checksum.o
+  CC      net/ipv6/ip6_icmp.o
+  CC      net/ipv4/xfrm4_mode_beet.o
+  CC      fs/select.o
+  CC      net/ipv4/tunnel4.o
+  CC      net/ipv4/xfrm4_mode_transport.o
+  CC      net/ipv6/output_core.o
+  CC      net/ipv4/xfrm4_mode_tunnel.o
+  CC      fs/dcache.o
+  CC      net/ipv4/ipconfig.o
+  CC      net/wireless/of.o
+  CC      lib/net_utils.o
+  CC      lib/sg_pool.o
+  CC      net/sctp/sysctl.o
+  CC      lib/asn1_decoder.o
+  CC      net/sctp/ipv6.o
+  CC      fs/inode.o
+  CC      fs/attr.o
+  CC      net/ipv4/netfilter.o
+  CC      net/netfilter/nf_nat_amanda.o
+  CC      net/netfilter/nf_nat_ftp.o
+  CC      net/netfilter/nf_nat_irc.o
+  CC      fs/bad_inode.o
+  CC      net/netfilter/nf_nat_tftp.o
+  CC      kernel/groups.o
+  CC      kernel/freezer.o
+  CC      kernel/profile.o
+  CC      net/netfilter/nf_conncount.o
+  CC      net/netfilter/x_tables.o
+  CC      net/ipv4/inet_diag.o
+  AR      net/xfrm/built-in.a
+  CC      net/netfilter/xt_tcpudp.o
+  CC      net/netfilter/xt_mark.o
+  CC      net/netfilter/xt_connmark.o
+  CC      lib/oid_registry.o
+  CC      net/ipv4/tcp_diag.o
+  CC      net/ipv4/udp_diag.o
+  CC      net/wireless/shipped-certs.o
+  CC      net/wireless/wext-core.o
+  CC      net/wireless/wext-proc.o
+  CC      net/wireless/wext-priv.o
+  CC      net/netfilter/xt_nat.o
+  CC      net/sctp/diag.o
+  CC      net/netfilter/xt_CLASSIFY.o
+  CC      net/ipv6/protocol.o
+  CC      net/ipv6/ip6_offload.o
+  CC      lib/sbitmap.o
+  CC      fs/file.o
+  CC      fs/filesystems.o
+  CC      net/netfilter/xt_CONNSECMARK.o
+  CC      net/netfilter/xt_CT.o
+  CC      fs/namespace.o
+  CC      net/ipv4/tcp_bic.o
+  CC      net/ipv4/tcp_cubic.o
+  CC      lib/argv_split.o
+  CC      kernel/stacktrace.o
+  CC      fs/seq_file.o
+  CC      fs/xattr.o
+  CC      kernel/futex.o
+  CC      kernel/smp.o
+  CC      lib/bug.o
+  CC      net/netfilter/xt_HL.o
+  CC      net/netfilter/xt_NETMAP.o
+  CC      net/ipv6/tcpv6_offload.o
+  CC      lib/clz_tab.o
+  CC      net/ipv6/exthdrs_offload.o
+  CC      net/ipv6/inet6_hashtables.o
+  CC      kernel/uid16.o
+  CC      net/ipv4/xfrm4_policy.o
+  CC      net/ipv6/ip6_udp_tunnel.o
+  CC      fs/libfs.o
+  CC      kernel/module.o
+  CC      lib/cmdline.o
+  CC      net/netfilter/xt_NFLOG.o
+  AR      net/sctp/built-in.a
+  CC      kernel/kallsyms.o
+  CC      net/ipv6/mcast_snoop.o
+  CC      net/netfilter/xt_NFQUEUE.o
+  CC      net/netfilter/xt_REDIRECT.o
+  CC      kernel/compat.o
+  CC      net/ipv4/xfrm4_state.o
+  CC      lib/cpumask.o
+  CC      fs/fs-writeback.o
+  CC      net/ipv4/xfrm4_input.o
+  CC      lib/ctype.o
+  CC      lib/dec_and_lock.o
+  AR      net/wireless/built-in.a
+  CC      fs/pnode.o
+  CC      kernel/utsname.o
+  CC      kernel/pid_namespace.o
+  GZIP    kernel/config_data.gz
+  CC      kernel/stop_machine.o
+  CC      lib/decompress.o
+  CC      lib/decompress_inflate.o
+  CC      lib/decompress_unlz4.o
+  CC      net/netfilter/xt_SECMARK.o
+  CC      lib/dump_stack.o
+  CC      lib/earlycpio.o
+  CC      net/netfilter/xt_TPROXY.o
+  CC      net/netfilter/xt_TCPMSS.o
+  CC      net/netfilter/xt_TRACE.o
+  CC      fs/splice.o
+  CC      net/ipv4/xfrm4_output.o
+  CC      net/ipv4/xfrm4_protocol.o
+  CC      fs/sync.o
+  CC      lib/extable.o
+  CC      net/netfilter/xt_IDLETIMER.o
+  CC      fs/utimes.o
+  CC      lib/fdt.o
+  CC      lib/fdt_empty_tree.o
+  CC      net/netfilter/xt_bpf.o
+  CC [M]  net/ipv4/tcp_westwood.o
+  CC [M]  net/ipv4/tcp_htcp.o
+  CC      lib/fdt_ro.o
+  CC      fs/d_path.o
+  CC      fs/stack.o
+  CC      lib/fdt_rw.o
+  CC      lib/fdt_strerror.o
+  CC      fs/fs_struct.o
+  CC      fs/statfs.o
+  CC      fs/fs_pin.o
+  CC      fs/nsfs.o
+  CC      fs/buffer.o
+  CC      fs/block_dev.o
+  CC      fs/direct-io.o
+  CC      fs/mpage.o
+  CC      fs/proc_namespace.o
+  CC      lib/fdt_sw.o
+  CC      kernel/audit.o
+  CC      fs/eventpoll.o
+  CC      lib/fdt_wip.o
+  CC      kernel/auditfilter.o
+  CC      lib/flex_proportions.o
+  CC      net/netfilter/xt_comment.o
+  CC      fs/anon_inodes.o
+  AR      net/ipv6/built-in.a
+  CC      net/netfilter/xt_connbytes.o
+  CC      fs/signalfd.o
+  CC      fs/timerfd.o
+  CC      fs/eventfd.o
+  CC      lib/idr.o
+  CC      kernel/auditsc.o
+  CC      kernel/audit_watch.o
+  CC      kernel/audit_fsnotify.o
+  CC      kernel/audit_tree.o
+  CC      fs/aio.o
+  CC      kernel/kprobes.o
+  CC      fs/locks.o
+  CC      fs/compat.o
+  CC      lib/int_sqrt.o
+  CC      fs/compat_ioctl.o
+  CC      fs/binfmt_script.o
+  CC      lib/ioremap.o
+  CC      lib/irq_regs.o
+  CC      lib/is_single_threaded.o
+  CC      lib/klist.o
+  CC      fs/binfmt_elf.o
+  AR      net/ipv4/built-in.a
+  CC      net/netfilter/xt_connlimit.o
+  CC      lib/kobject.o
+  CC      fs/compat_binfmt_elf.o
+  CC      lib/kobject_uevent.o
+  CC      fs/mbcache.o
+  CC      net/netfilter/xt_conntrack.o
+  CC      lib/nmi_backtrace.o
+  CC      kernel/seccomp.o
+  CC      kernel/utsname_sysctl.o
+  CC      lib/nodemask.o
+  CC      kernel/taskstats.o
+  CC      fs/posix_acl.o
+  CC      kernel/tsacct.o
+  CC      kernel/tracepoint.o
+  CC      lib/plist.o
+  CC      kernel/irq_work.o
+  CC      lib/radix-tree.o
+  CC      lib/ratelimit.o
+  CC      lib/rbtree.o
+  CC      fs/coredump.o
+  CC      lib/seq_buf.o
+  CC      fs/drop_caches.o
+  CC      kernel/cpu_pm.o
+  CC      kernel/scs.o
+  CC      fs/iomap.o
