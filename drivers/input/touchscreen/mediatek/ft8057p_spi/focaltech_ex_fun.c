@@ -1212,6 +1212,7 @@ int lct_fts_get_tpfwver(const char *cmd)
     struct fts_ts_data *ts_data = fts_data;
     struct input_dev *input_dev = ts_data->input_dev;
     ssize_t num_read_chars = 0;
+       (void)num_read_chars; // Suppress unused variable warning.
     char buf[64] = {0};
     u8 fwver = 0;
 
