@@ -9,7 +9,7 @@ cd Xiaomi_Kernel_gale
 git clone https://gitlab.com/LeCmnGend/clang.git -b clang-18 --depth=1
 
 
-TC_DIR="$(pwd)/clang-18"
+TC_DIR="$(pwd)/clang"
 
 export PATH="$TC_DIR/bin:$PATH"
 
