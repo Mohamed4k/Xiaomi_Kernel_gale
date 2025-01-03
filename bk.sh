@@ -2,7 +2,7 @@ sudo apt-get install clang-format clang-tidy clang-tools clang clangd libc++-dev
 
 sudo apt-get install gcc-aarch64-linux-gnu
 
-git clone --depth=1 https://github.com/Mohamed4k/Xiaomi_Kernel_gale.git -b gale-s-oss
+git clone --depth=1 https://github.com/Mohamed4k/Xiaomi_Kernel_gale.git -b main
 
 cd Xiaomi_Kernel_gale
 
